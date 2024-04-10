@@ -1,6 +1,7 @@
 import React from 'react';
-import styles from './style.css'
-
+import styles from './style.css';
+import Logo from "../img/logo.png"
+ 
 
 export default function Cabecalho(){
     
@@ -8,7 +9,7 @@ export default function Cabecalho(){
     return(
         <header>
             <figure>
-                <img src="" alt="Logo" />
+                <img src ={Logo} alt="Logo" />
             </figure>
             <p className='texto'>Categorias</p>
             <input type="text" placeholder="Pesquise oque deseje encontrar" />
