@@ -1,0 +1,33 @@
+nav{
+    background-color: rgb(18, 18, 54);
+    width: 300px;
+   
+    
+    
+}
+
+nav ul{
+    list-style-type: none;
+     
+    
+}
+nav ul li{
+    gap: 50px;
+}
+
+
+nav ul li a{
+    color: white;
+    display: block;
+    text-decoration: none;
+    margin-top: 0;  
+    padding: 50px;
+    margin-left: 0px;
+}
+
+nav ul li a:hover{
+    background-color: rgb(255, 239, 19);
+    color: black;
+    
+}
+

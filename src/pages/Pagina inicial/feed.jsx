@@ -5,12 +5,11 @@ import Cabecalho from '../../components/Cabecalho/Cabecalho.jsx'
 export default function Feed() {
 
     return (
-        <main className="container">
-            <Cabecalho/>
-            <div>
+        <div className="container">
+            <div >
                 <h1></h1>
             </div>
-        </main>
+        </div>
     )
 
 }
