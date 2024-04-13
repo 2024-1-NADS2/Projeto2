@@ -1,82 +1,70 @@
-.barralateral{
-    background-color: rgba(18, 18, 54, 0.915);
-    width: 230px;
-    
-}
 
-nav{
-    
-    width: 275px;
-    display: flex;
-    flex-direction: column;
-    margin-top: 25%;
-    gap: 40px;
-     
-    
-}
-
-nav ul{
-    list-style-type: none;
-    margin-top: 0; 
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+nav.menu-lateral {
+    width: 80px;
     height: 100%;
-    
-    
+    background-color: rgba(18, 18, 54, 0.915);
+    padding: 40px 0 40px 1%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12pt;
+    box-shadow:3px 0 0 rgb(255, 238, 1);
+    z-index: 9999;
+    position: fixed;
+    left: 0;
+    margin-top: 10vh;
+    overflow: hidden;
+    transition: 1s;
 }
-nav ul li{
-    gap: 10px;
+
+nav.menu-lateral:hover{
+    width: 275px;
     
 }
 
+.btn-expandir {
+    width: 100%;
+    padding-left: 10px;
 
-nav ul li a{
+}
+
+.btn-expandir svg {
     color: white;
-    display: block;
-    text-decoration: none;
-    margin-top: 0;  
-    padding: 20px;
-    margin-left: 10px;
-    
-    
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
 }
 
-nav ul li a:hover{
+ul {
+    height: 100%;
+    list-style-type: none;
+}
+
+ul li.item-menu{
+    transition: .5s;
+}
+
+ul li.item-menu:hover{
     background-color: rgb(255, 239, 19);
-    color: black;
-    margin: 0;
-    padding: 20px;
+    
+    
+}
+
+ul li.item-menu a {
+    color: white;
+    text-decoration: none;
+    padding: 20px 4%;
     display: flex;
-    a{
-        margin-left: 10px;
-    }
-
-    
+    margin-bottom: 20px;
+    line-height: 45px;
+    white-space: nowrap;
 }
 
+ul li.item-menu a .txt-link {
+    margin-left: 40px;
 
-
-.botao-hamburguer div{
-    width: 18px;
-    height: 1.5px;
-    background: #ffffff;
-    margin: 4px;
-    
 }
 
-.botaonav{
-    
-    background-color:rgba(168, 167, 167, 0.892);
-    border-radius: 20px;
-    width: 30px;
-    height: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 12px;
-    margin-top: 20px;
-    border: 1px solid rgb(255, 255, 255);
-    
+ul li.item-menu a .icon svg {
+    font-size: 30px;
+    margin-top: 6px;
+    margin-left: 8px;
 }
-
