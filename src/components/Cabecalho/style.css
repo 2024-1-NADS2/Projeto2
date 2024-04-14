@@ -25,6 +25,79 @@ header {
     
 }
 
+
+
+nav div a{
+    text-decoration: none;
+    display: block;
+}
+
+nav div a:hover{
+    background-color: none;
+}
+
+.drop{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    background-color: rgba(18, 18, 54, 0.915);
+    white-space: nowrap;
+    display: block;
+    margin-right: 200px;
+    height: 0;
+    overflow: hidden;
+    z-index: 999;    
+    
+
+}
+
+.drop a{
+    color: white;
+    padding: 15px 10px;
+}
+
+.drop a:hover{
+    background-color: rgb(255, 239, 19);
+    
+}
+
+.drop-hover{
+    position: relative;
+    
+    
+    
+}
+
+.drop-hover .drop{
+    position:absolute;
+    border-right:3px solid rgb(255, 238, 1);
+    border-top: 0;
+    
+    
+}
+
+.categorias{
+    height: 9.8vh;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    
+    
+}
+
+.drop-hover:hover .drop{
+    height: 300px;
+    border-bottom:0px solid rgb(255, 238, 1);
+    border-right:3px solid rgb(255, 238, 1);
+    transition: .8s;
+}
+.texto:hover{
+    background-color: none;
+}
+
+.texto svg{
+    font-size: 12px;
+}
+
 input {
     height: 1vh;
     width: 25%;
@@ -39,7 +112,7 @@ input {
     justify-content: center;
     width: 12%;
     gap:3px;
-    margin: 5px;
+    
     
 
 
@@ -51,7 +124,7 @@ input {
 .btn {
     width: 100%;
     background-color: white;
-    height: 5vh;
+    height: 40px;
     border: solid 1px black;
     font-weight: bold;
     cursor: pointer;

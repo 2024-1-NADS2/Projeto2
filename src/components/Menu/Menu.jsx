@@ -6,9 +6,7 @@ export default function Menu() {
     return (
         <nav className="menu-lateral">
 
-            <div className="btn-expandir">
-                <BsList></BsList>
-            </div>
+          
 
             <ul>
                 <li className="item-menu">
