@@ -1,17 +1,8 @@
-import Cabecalho from '../src/components/Cabecalho/Cabecalho.jsx';
-import Menu from './components/Menu/Menu.jsx';
-import Feed from './pages/Pagina inicial/feed.jsx'
-import index from './index.css'
+import AppRoutes from './Routes';
 function App() {
   
   return (
-    <div className="App">
-      <Cabecalho></Cabecalho>
-      <div className='Pag'><Menu></Menu>
-      <Feed></Feed>
-      </div>
-
-    </div>
+    <AppRoutes/>
   );
 }
 

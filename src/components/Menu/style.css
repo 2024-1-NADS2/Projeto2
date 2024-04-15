@@ -2,7 +2,7 @@
 nav.menu-lateral {
     width: 80px;
     height: 100%;
-    background-color: rgba(18, 18, 54, 0.915);
+    background-color: rgb(18, 18, 54);
     padding: 40px 0 40px 1%;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: 12pt;
@@ -46,6 +46,7 @@ ul li.item-menu:hover{
     background-color: rgb(255, 239, 19);
     
     
+    
 }
 
 ul li.item-menu a {
@@ -67,4 +68,8 @@ ul li.item-menu a .icon svg {
     font-size: 30px;
     margin-top: 6px;
     margin-left: 8px;
+}
+
+ul li.item-menu a:hover{
+    color: black;
 }

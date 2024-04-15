@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./style.css"
 import { BsList, BsHouse, BsBook, BsPeople, BsTelephone } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 export default function Menu() {
     return (
@@ -10,28 +11,28 @@ export default function Menu() {
 
             <ul>
                 <li className="item-menu">
-                    <a href="#">
+                    <Link to="/">
                         <span className="icon"><BsHouse/></span>
                         <span className="txt-link">Home</span>
-                    </a>
+                    </Link>
                 </li>
                 <li className="item-menu">
-                    <a href="#">
+                    <Link to="/cursos">
                         <span className="icon"><BsBook /></span>
                         <span className="txt-link">Cursos</span>
-                    </a>
+                    </Link>
                 </li>
                 <li className="item-menu">
-                    <a href="#">
+                    <Link to="/sobrenos">
                         <span className="icon"><BsPeople /></span>
                         <span className="txt-link">Sobre Nós</span>
-                    </a>
+                    </Link>
                 </li>
                 <li className="item-menu">
-                    <a href="#">
+                    <Link to="/contato">
                         <span className="icon"><BsTelephone/></span>
                         <span className="txt-link">Contato</span>
-                    </a>
+                    </Link>
                 </li>
             </ul>
 

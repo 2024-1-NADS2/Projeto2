@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './style.css';
 import Logo from "../img/logo.png"
 import { AiFillCaretDown} from "react-icons/ai";
+import { Link } from 'react-router-dom';
 
 
 export default function Cabecalho() {
@@ -10,7 +11,9 @@ export default function Cabecalho() {
     return (
         <header>
             <figure>
+                <Link to="/">
                 <img src={Logo} alt="Logo" />
+                </Link>
             </figure>
             <nav className='drop-hover'> 
             <div className='categorias'> <a className='texto'>Categorias <AiFillCaretDown /></a> </div>

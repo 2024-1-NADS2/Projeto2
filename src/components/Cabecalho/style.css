@@ -39,13 +39,14 @@ nav div a:hover{
 .drop{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: 14px;
-    background-color: rgba(18, 18, 54, 0.915);
+    background-color: rgba(18, 18, 54);
     white-space: nowrap;
     display: block;
     margin-right: 200px;
     height: 0;
     overflow: hidden;
-    z-index: 999;    
+    z-index: 999; 
+    position: fixed;   
     
 
 }
@@ -90,6 +91,9 @@ nav div a:hover{
     border-right:3px solid rgb(255, 238, 1);
     transition: .8s;
 }
+.drop-hover:hover .drop a:hover{
+    color: black;
+}
 .texto:hover{
     background-color: none;
 }
@@ -112,11 +116,6 @@ input {
     justify-content: center;
     width: 12%;
     gap:3px;
-    
-    
-
-
-  
     
     
 }
