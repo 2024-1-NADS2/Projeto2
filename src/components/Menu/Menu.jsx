@@ -17,9 +17,9 @@ export default function Menu() {
                     </Link>
                 </li>
                 <li className="item-menu">
-                    <Link to="/cursos">
+                    <Link to="/organizações">
                         <span className="icon"><BsBook /></span>
-                        <span className="txt-link">Cursos</span>
+                        <span className="txt-link">Organizações</span>
                     </Link>
                 </li>
                 <li className="item-menu">
