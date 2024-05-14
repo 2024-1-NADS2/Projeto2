@@ -1,4 +1,5 @@
 import React from "react";
+import { useState } from "react";
 import style from './style.css';
 
 
@@ -6,6 +7,9 @@ import style from './style.css';
 
 
 export default function Login(){
+
+    const [email, setEmail] = useState("");
+    const [passaword, setPassaword] = useState("");
     return(
         <body>
         <div class="logincontainer">
@@ -17,19 +21,32 @@ export default function Login(){
                 <div class="campologin">
                     <h2>LOGIN</h2>
                 <div class="inputs">
-                    <label for="username">username</label>
-                    <input type="text" id="username" name="username"
-                        required/>
+                    <label for="email">Email</label>
+                    <input 
+                    type="email" 
+                    id="email" 
+                    name="email"
+                    value={email}
+                    onchange={e => setEmail(e.target.value)}
+                    required/>
                 </div>
                 <div class="inputs">
                     <label for="passaword">passaword</label>
-                    <input type="password" id="passaword" name="passaword" required/>
+                    <input 
+                    type="password" 
+                    id="passaword" 
+                    name="passaword" 
+                    value={passaword}
+                    onchange={e => setPassaword(e.target.value)}
+                    required/>
                 </div>
-                <div class="esqueceupassword">
-                    <label for="esqueceupassaword"></label>
-                    <a href="#">lembre me</a>
+                <div class="criarconta">
+                    <label for="criarconta"></label>
+                    <a href="#">criar conta</a>
                 </div>
-                <button type="submit">LOGIN</button>
+                
+                <button type="submit" className="botlogin" href="#">LOGIN</button>
+                
             </div>
             </form>
         </div>

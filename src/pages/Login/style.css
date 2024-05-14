@@ -73,14 +73,14 @@ body *{
     color:rgb(255, 238, 1);
     margin-bottom: 10px;
 }
-.esqueceupassword{
+.criarconta{
     
     text-transform: uppercase;
     margin: 10px 0px;
     text-decoration: none;
 }
 
-button{
+.botlogin{
     width: 100%;
     padding: 15px 0px;
     margin:0;
