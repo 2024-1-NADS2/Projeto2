@@ -1,0 +1,28 @@
+.home-content-welcome{
+    background-color: rgb(221, 218, 218);
+    width: 410px;
+    height: 400px;
+    clip-path: polygon(6% 0, 94% 0, 100% 6%, 100% 94%, 95% 100%, 5% 100%, 0 94%, 0 6%);
+    display: flex;
+    justify-content: center;
+    
+    
+}
+
+.home-content-welcome-small{
+    height: 398px;
+    width: 404px;
+    margin-top: 2px;
+    background-color: rgb(158, 156, 156);
+    clip-path: polygon(6.5% 0.5%, 93.5% 0.5%, 99.5% 6.5%, 99.5% 93.5%, 0.5% 93.5%, 0.5% 6.5%);
+}
+
+.home-content-welcome-small-show{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1.25rem .75rem 1rem;
+    gap: 1rem;
+}
+
+
