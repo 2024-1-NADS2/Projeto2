@@ -1,44 +1,42 @@
-body{
+body {
     margin: 0;
 }
-body *{
+
+body * {
     box-sizing: border-box;
 }
-.cadastrarcontainer{
+
+.container-register {
     width: 100vw;
     height: 100vh;
+    display: flex;
     justify-content: center;
     align-items: center;
     background-color: rgb(255, 238, 1);
-    display: flex;
 }
-.cadastrar-form{
-    width: 100vw;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-}
-.campocadastrar{
+
+.container-register-form {
     width: 100%;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    padding: 30px 35px;
+    max-width: 400px; /* Adicionado para limitar a largura máxima do formulário */
+    padding: 30px 20px; /* Adicionado para melhorar o espaçamento interno */
     background-color: rgb(18, 18, 54);
     border-radius: 10px;
+    display: flex;
+    flex-direction: column; /* Mudança para coluna */
+    align-items: center; /* Centraliza os itens */
 }
-.campocadastrar > h2{
-    color: rgb(255, 238, 1);
-    margin: 0;
+
+.container-title-form-register {
+    color: white;
+    margin-bottom: 20px; 
     font-weight: 800;
+    text-transform: uppercase;
 }
-select{
-    margin:0;
-    text-align: center;
+
+select {
+    width: 100%; 
+    margin-bottom: 10px; 
+    padding: 10px; 
     border: none;
     border-radius: 10px;
     outline: none;
@@ -46,42 +44,42 @@ select{
     font-weight: 800;
     letter-spacing: 2px;
     color: rgb(18, 18, 54);
-    background-color: rgb(255, 238, 1);
+    background-color: white;
     cursor: pointer;
-
 }
-.inputscad{
+
+select > label {
+    color: rgb(255, 238, 1);
+}
+
+.container-inputs-form-register {
+    width: 100%; 
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: center;
-    margin: 10px 0px;
+    margin-bottom: 10px; 
 }
-.inputscad > input{
-    width: 100%;
+
+.container-inputs-form-register > input {
+    width: 100%; 
     border-radius: 10px;
     border: none;
-    padding: 10px;
-    background-color: rgb(255, 238, 1);
-    font-size: 12pt;
+    padding: 15px;
+    background-color: white;
+    font-size: 14pt;
     outline: none;
-    box-sizing: border-box;
 }
-.inputscad > label{
-    color:rgb(255, 238, 1);
-    margin-bottom: 10px;
-}
-.jatemlogin{
-    
+
+.container-Ihaveanaccount-form {
     text-transform: uppercase;
     margin: 10px 0px;
     text-decoration: none;
+    color: rgb(255, 238, 1); 
 }
 
-.botcadastrar{
-    width: 100%;
+.container-button-form-register {
+    width: 100%; 
     padding: 15px 0px;
-    margin:0;
     border: none;
     border-radius: 10px;
     outline: none;
@@ -89,7 +87,7 @@ select{
     font-weight: 800;
     letter-spacing: 2px;
     color: rgb(18, 18, 54);
-    background-color: rgb(255, 238, 1);
+    background-color: white;
     cursor: pointer;
-    
+    text-align: center; 
 }

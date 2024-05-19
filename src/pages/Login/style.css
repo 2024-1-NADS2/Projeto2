@@ -1,89 +1,88 @@
-body{
+body {
     margin: 0;
 }
-body *{
+
+body * {
     box-sizing: border-box;
 }
 
-.logincontainer{
+.container-login {
     width: 100vw;
     height: 100vh;
+    display: flex;
     justify-content: center;
     align-items: center;
     background-color: rgb(255, 238, 1);
-    display: flex;
-}
-.ladocplogin{
-    width: 50vw;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-}
-.ladocplogin > h1{
-    color: rgb(18, 18, 54);
-    text-transform: uppercase;
 }
 
-.login-form{
+.container-image-login {
     width: 50vw;
     height: 100vh;
-    justify-content: center;
-    align-items: center;
-    justify-content: center;
-    align-items: center;
     display: flex;
-}
-.campologin{
-    width: 100%;
     justify-content: center;
     align-items: center;
-    display: flex;
     flex-direction: column;
+}
+
+.container-image-login > h1 {
+    color: rgb(18, 18, 54);
+}
+
+.container-login-form {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-campo-form {
+    width: 60%;
     padding: 30px 35px;
     background-color: rgb(18, 18, 54);
     border-radius: 10px;
-    
-
-}
-.campologin > h2{
-    color: rgb(255, 238, 1);
-    margin: 0;
-    font-weight: 800;
-}
-.inputs{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    margin: 10px 0px;
+    align-items: center; 
 }
-.inputs > input{
+
+.container-title-form {
+    color: white;
+    margin-bottom: 20px;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.container-inputs-form {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.container-inputs-form > input {
     width: 100%;
     border-radius: 10px;
     border: none;
-    padding: 10px;
-    background-color: rgb(255, 238, 1);
-    font-size: 12pt;
+    padding: 15px;
+    background-color: white;
+    font-size: 14pt;
     outline: none;
     box-sizing: border-box;
-}
-.inputs > label{
-    color:rgb(255, 238, 1);
     margin-bottom: 10px;
 }
-.criarconta{
-    
+
+.container-alt-form, .container-criar-form {
     text-transform: uppercase;
-    margin: 10px 0px;
+    margin: 10px 0;
     text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 238, 1);
 }
 
-.botlogin{
+.container-button-form {
     width: 100%;
-    padding: 15px 0px;
-    margin:0;
+    padding: 15px 0;
     border: none;
     border-radius: 10px;
     outline: none;
@@ -91,12 +90,8 @@ body *{
     font-weight: 800;
     letter-spacing: 2px;
     color: rgb(18, 18, 54);
-    background-color: rgb(255, 238, 1);
+    background-color: white;
     cursor: pointer;
-    
-}
-@media screen and (max-width: 500px){
-    .logincontainer{
-        flex-direction: column;
-    }
+    text-align: center;
+    margin-top: 20px; 
 }

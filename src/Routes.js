@@ -5,6 +5,7 @@ import Contato from "./pages/Contato/Contato";
 import Login from "./pages/Login/Login";
 import Cadastro from "./pages/Cadastro/Cadastro";
 import Organizações from "./pages/Cursos/Organizações";
+import Recuperarsenha from "./pages/RecuperarSenha/Recuperarsenha";
 function AppRoutes(){
     return(
         <BrowserRouter>
@@ -15,6 +16,7 @@ function AppRoutes(){
                 <Route path="/contato" element={<Contato/>}></Route>
                 <Route path="/login" element={<Login/>}></Route>
                 <Route path="/cadastro" element={<Cadastro/>}></Route>
+                <Route path="/recuperarsenha" element={<Recuperarsenha/>}></Route>
             </Routes>
         </BrowserRouter>
    )

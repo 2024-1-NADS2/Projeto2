@@ -1,93 +1,136 @@
 import React from "react";
 import style from './style.css';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 
 
 export default function Cadastro(){
     const [email, setEmail] = useState("");
-    const [passaword, setPassaword] = useState("");
+    const [password, setPassword] = useState("");
     const [nome, setNome] = useState("");
     const [tipoUsuario, setTipoUsuario] = useState("usuario"); 
     const [cnpj, setCnpj] = useState("");
+    const [cidade, setCidade] = useState("");
+    const [rua, setRua] = useState("");
+    const [numeroEndereco, setNumeroEndereco] = useState("");
+    const [telefone, setTelefone] = useState("");
     return(
     <body>
-    
-      <div class="cadastrarcontainer">
-            <form id="cadastrar-form">
-                <div class="campocadastrar">
-                    <h2>CADASTRAR</h2>
+     <div className="container-register">
+            <form className="container-register-form">
+                <div className="container-field-form">
+                <div className="container-title-form-register">
+                    <h1>cadastrar</h1>
+                </div>
 
-                    <div class="inputscad">
+                    <div className="container-select-register">
                             <label For="tipo-usuario">Tipo de Usuário</label>
-                            <select id="tipo-usuario" value={tipoUsuario} onChange={e => setTipoUsuario(e.target.value)}>
+                            <select className="tipo-usuario" value={tipoUsuario} onChange={e => setTipoUsuario(e.target.value)}>
                                 <option value="usuario">Usuário</option>
                                 <option value="ong">ONG</option>
                             </select>
-                        </div>
+                    </div>
 
-                    <div class="inputscad">
-                    <label for="email">username</label>
+                
+                <div className="container-inputs-form-register">
                     <input 
                     type="text" 
-                    id="name" 
-                    name="nome"
-                    value={nome}
-                    onchange={e => setNome(e.target.value)}
+                    placeholder="Nome"
+                    value={nome} 
+                    onChange={e => setNome(e.target.value)}
                     required/>
                 </div>
-
-                <div class="inputscad">
-                    <label for="email">Email</label>
+                <div className="container-inputs-form-register">
                     <input 
-                    type="email" 
-                    id="email" 
-                    name="email"
-                    value={email}
-                    onchange={e => setEmail(e.target.value)}
+                    type="text" 
+                    placeholder="Email"
+                    value={email} 
+                    onChange={e => setEmail(e.target.value)}
                     required/>
                 </div>
-
-                <div class="inputscad">
-                    <label for="passaword">passaword</label>
+                <div className="container-inputs-form-register">
                     <input 
-                    type="password" 
-                    id="passaword" 
-                    name="passaword" 
-                    value={passaword}
-                    onchange={e => setPassaword(e.target.value)}
+                    type="Password" 
+                    placeholder="senha" 
+                    value={password}
+                    onChange={e => setPassword(e.target.value)}
                     required/>
                 </div>
 
                 {tipoUsuario === 'ong' && (
-                            <div class="inputscad">
-                                <label htmlFor="cnpj">CNPJ</label>
-                                <input
-                                    type="text"
-                                    id="cnpj"
-                                    name="cnpj"
-                                    value={cnpj}
-                                    onChange={e => setCnpj(e.target.value)}
-                                    required
-                                />
-                            </div>
-                        )}
+            <>
+              <div className="container-inputs-form-register">
+                <label htmlFor="cnpj"></label>
+                <input
+                  type="text"
+                  placeholder="CNPJ"
+                  value={cnpj}
+                  onChange={e => setCnpj(e.target.value)}
+                  required
+                />
+              </div>
+              <div className="container-inputs-form-register">
+                <label htmlFor="cidade"></label>
+                <input
+                  type="text"
+                  placeholder="Cidade"
+                  value={cidade}
+                  onChange={e => setCidade(e.target.value)}
+                  required
+                />
+              </div>
+              <div className="container-inputs-form-register">
+                <label htmlFor="rua"></label>
+                <input
+                  type="text"
+                  placeholder="Rua"
+                  value={rua}
+                  onChange={e => setRua(e.target.value)}
+                  required
+                />
+              </div>
+              <div className="container-inputs-form-register">
+                <label htmlFor="numeroEndereco"></label>
+                <input
+                  type="text"
+                  placeholder="Numero de Endereço"
+                  value={numeroEndereco}
+                  onChange={e => setNumeroEndereco(e.target.value)}
+                  required
+                />
+              </div>
+              <div className="container-inputs-form-register">
+                <label htmlFor="telefone"></label>
+                <input
+                  type="text"
+                  placeholder="telefone"
+                  value={telefone}
+                  onChange={e => setTelefone(e.target.value)}
+                  required
+                />
+              </div>
+            </>
+          )}
 
-                <div class="jatemlogin">
-                    <label for="japossuiconta"></label>
-                    <a href="#">ja possui conta</a>
+                   <Link to="/login">
+                    <div className="container-Ihaveanaccount-form">
+                     <label htmlFor="Ihaveanaccount"></label>
+                     <a href="#">ja possui conta</a>   
+                    </div>
+                    </Link>
+                
+                 <Link to="/login">
+                <button type="submit" className="container-button-form-register" href='#'>cadastrar</button>
+                </Link>
+
                 </div>
 
-                
-                <button type="submit" class="botcadastrar">CADASTRAR</button>
-                
-
-            </div>
             </form>
         </div>
-        <script srg="script.js"></script>
+        <script src="script.jsx"></script>
     
-    
+      
     </body>
     )
 }

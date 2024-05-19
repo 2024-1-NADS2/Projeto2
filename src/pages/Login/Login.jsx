@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import style from './style.css';
+import { Link } from 'react-router-dom';
 
 
 
@@ -9,49 +10,57 @@ import style from './style.css';
 export default function Login(){
 
     const [email, setEmail] = useState("");
-    const [passaword, setPassaword] = useState("");
+    const [password, setPassword] = useState("");
     return(
         <body>
-        <div class="logincontainer">
-            <div class="ladocplogin">
-                <img src="logo.png" class="logologin" alt="logo"/>
-                <h1>venha aprender</h1>
+        <div className="container-login">
+            <div className="container-image-login">
+                <h1>VENHA APRENDER</h1>
             </div>
-            <form id="login-form">
-                <div class="campologin">
-                    <h2>LOGIN</h2>
-                <div class="inputs">
-                    <label for="email">Email</label>
+            <form className="container-login-form">
+                <div className="container-campo-form">
+                <div className="container-title-form">
+                    <h1>login</h1>
+                </div>
+                <div className="container-inputs-form">
                     <input 
-                    type="email" 
-                    id="email" 
-                    name="email"
-                    value={email}
-                    onchange={e => setEmail(e.target.value)}
+                    type="text" 
+                    placeholder="Email"
+                    value={email} 
+                    onChange={e => setEmail(e.target.value)}
                     required/>
                 </div>
-                <div class="inputs">
-                    <label for="passaword">passaword</label>
+                <div className="container-inputs-form">
                     <input 
-                    type="password" 
-                    id="passaword" 
-                    name="passaword" 
-                    value={passaword}
-                    onchange={e => setPassaword(e.target.value)}
+                    type="Password" 
+                    placeholder="senha" 
+                    value={password}
+                    onChange={e => setPassword(e.target.value)}
                     required/>
                 </div>
-                <div class="criarconta">
-                    <label for="criarconta"></label>
-                    <a href="#">criar conta</a>
+                <Link to="/recuperarsenha">
+                    <div className="container-alt-form">
+                    <label htmlFor="altpassword"></label>
+                    <a href="#">Alterar senha</a>
+                    </div>
+                </Link>
+                <Link to="/cadastro">
+                    <div className="container-criar-form">
+                     <label htmlFor="criarcont"></label>
+                     <a href="#">Criar Conta</a>   
+                    </div>
+                </Link>
+                
+                <Link to="/">
+                <button type="submit" className="container-button-form" href='#'>login</button>
+                </Link>
+
                 </div>
-                
-                <button type="submit" className="botlogin" href="#">LOGIN</button>
-                
-            </div>
+
             </form>
         </div>
-        <script srg="script.js"></script>
+        <script src="script.jsx"></script>
     
-    </body> 
+        </body> 
     )
 }
