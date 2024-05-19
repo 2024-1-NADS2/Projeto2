@@ -53,7 +53,7 @@ export default function Cadastro(){
                 <div className="container-inputs-form-register">
                     <input 
                     type="Password" 
-                    placeholder="senha" 
+                    placeholder="Senha" 
                     value={password}
                     onChange={e => setPassword(e.target.value)}
                     required/>
@@ -65,7 +65,7 @@ export default function Cadastro(){
                 <label >Ex:00.000.000/0000-00</label>
                 <input
                   type="text"
-                  placeholder="CNPJ"
+                  placeholder="Cnpj"
                   value={cnpj}
                   onChange={e => setCnpj(e.target.value)}
                   required
