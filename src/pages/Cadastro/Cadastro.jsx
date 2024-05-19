@@ -25,7 +25,7 @@ export default function Cadastro(){
                 </div>
 
                     <div className="container-select-register">
-                            <label For="tipo-usuario">Tipo de Usuário</label>
+                            <label >Tipo de Usuário</label>
                             <select className="tipo-usuario" value={tipoUsuario} onChange={e => setTipoUsuario(e.target.value)}>
                                 <option value="usuario">Usuário</option>
                                 <option value="ong">ONG</option>
@@ -34,6 +34,7 @@ export default function Cadastro(){
 
                 
                 <div className="container-inputs-form-register">
+                  <label ></label>
                     <input 
                     type="text" 
                     placeholder="Nome"
@@ -61,7 +62,7 @@ export default function Cadastro(){
                 {tipoUsuario === 'ong' && (
             <>
               <div className="container-inputs-form-register">
-                <label htmlFor="cnpj"></label>
+                <label >Ex:00.000.000/0000-00</label>
                 <input
                   type="text"
                   placeholder="CNPJ"
@@ -71,7 +72,7 @@ export default function Cadastro(){
                 />
               </div>
               <div className="container-inputs-form-register">
-                <label htmlFor="cidade"></label>
+                <label ></label>
                 <input
                   type="text"
                   placeholder="Cidade"
@@ -81,7 +82,7 @@ export default function Cadastro(){
                 />
               </div>
               <div className="container-inputs-form-register">
-                <label htmlFor="rua"></label>
+                <label ></label>
                 <input
                   type="text"
                   placeholder="Rua"
@@ -91,7 +92,7 @@ export default function Cadastro(){
                 />
               </div>
               <div className="container-inputs-form-register">
-                <label htmlFor="numeroEndereco"></label>
+                <label ></label>
                 <input
                   type="text"
                   placeholder="Numero de Endereço"
@@ -101,7 +102,7 @@ export default function Cadastro(){
                 />
               </div>
               <div className="container-inputs-form-register">
-                <label htmlFor="telefone"></label>
+                <label ></label>
                 <input
                   type="text"
                   placeholder="telefone"
@@ -115,13 +116,13 @@ export default function Cadastro(){
 
                    <Link to="/login">
                     <div className="container-Ihaveanaccount-form">
-                     <label htmlFor="Ihaveanaccount"></label>
-                     <a href="#">ja possui conta</a>   
+                     <label ></label>
+                     <a >ja possui conta</a>   
                     </div>
                     </Link>
                 
                  <Link to="/login">
-                <button type="submit" className="container-button-form-register" href='#'>cadastrar</button>
+                <button type="submit" className="container-button-form-register" >cadastrar</button>
                 </Link>
 
                 </div>

@@ -33,7 +33,7 @@ export default function Login(){
                 <div className="container-inputs-form">
                     <input 
                     type="Password" 
-                    placeholder="senha" 
+                    placeholder="Senha" 
                     value={password}
                     onChange={e => setPassword(e.target.value)}
                     required/>
@@ -41,13 +41,13 @@ export default function Login(){
                 <Link to="/recuperarsenha">
                     <div className="container-alt-form">
                     <label htmlFor="altpassword"></label>
-                    <a href="#">Alterar senha</a>
+                    <a >Alterar senha</a>
                     </div>
                 </Link>
                 <Link to="/cadastro">
                     <div className="container-criar-form">
                      <label htmlFor="criarcont"></label>
-                     <a href="#">Criar Conta</a>   
+                     <a >Criar Conta</a>   
                     </div>
                 </Link>
                 
