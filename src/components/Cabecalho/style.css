@@ -6,16 +6,12 @@ header {
     align-items: center;
     gap: 50px;
     justify-content: space-between;
-    border-bottom:0.1px solid rgb(120, 118, 118);
+    border-bottom: 0.1px solid rgb(120, 118, 118);
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 9999;
-    
-    
-    
-    
 }
 
 .texto {
@@ -23,22 +19,19 @@ header {
     font-family: Arial, Helvetica, sans-serif;
     white-space: nowrap;
     cursor: pointer;
-    
 }
 
-
-
-nav div a{
+nav div a {
     text-decoration: none;
     display: block;
 }
 
-nav div a:hover{
+nav div a:hover {
     background-color: none;
 }
 
-.drop{
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+.drop {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 14px;
     background-color: rgba(18, 18, 54);
     white-space: nowrap;
@@ -46,60 +39,52 @@ nav div a:hover{
     margin-right: 200px;
     height: 0;
     overflow: hidden;
-    z-index: 999; 
-    position: fixed;   
-    
-
+    z-index: 999;
+    position: fixed;
 }
 
-.drop a{
+.drop a {
     color: white;
     padding: 15px 10px;
 }
 
-.drop a:hover{
+.drop a:hover {
     background-color: rgb(255, 239, 19);
-    
 }
 
-.drop-hover{
+.drop-hover {
     position: relative;
-    
-    
-    
 }
 
-.drop-hover .drop{
-    position:absolute;
-    border-right:3px solid rgb(255, 238, 1);
+.drop-hover .drop {
+    position: absolute;
+    border-right: 3px solid rgb(255, 238, 1);
     border-top: 0;
-    
-    
 }
 
-.categorias{
+.categorias {
     height: 9.8vh;
     display: flex;
     align-items: center;
     padding-left: 20px;
-    
-    
 }
 
-.drop-hover:hover .drop{
-    height: 300px;
-    border-bottom:0px solid rgb(255, 238, 1);
-    border-right:3px solid rgb(255, 238, 1);
+.drop-hover:hover .drop {
+    height: auto;
+    border-bottom: 0px solid rgb(255, 238, 1);
+    border-right: 3px solid rgb(255, 238, 1);
     transition: .8s;
 }
-.drop-hover:hover .drop a:hover{
+
+.drop-hover:hover .drop a:hover {
     color: black;
 }
-.texto:hover{
+
+.texto:hover {
     background-color: none;
 }
 
-.texto svg{
+.texto svg {
     font-size: 12px;
 }
 
@@ -116,11 +101,8 @@ input {
     align-items: center;
     justify-content: center;
     width: 15%;
-    gap:3px;
+    gap: 3px;
     margin-right: 2%;
-    
-    
-    
 }
 
 .btn {
@@ -136,21 +118,71 @@ input {
     justify-content: center;
     align-items: center;
     white-space: nowrap;
-    
-    
 }
 
-.linksemsublinhado{
+.linksemsublinhado {
     text-decoration: none;
-    
 }
 
-.btn:hover{
+.btn:hover {
     background-color: rgb(216, 214, 214);
 }
 
-figure{
+figure {
     margin-left: 15px;
 }
 
 
+
+@media screen and (max-width: 768px) {
+    header {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 10vh;
+        gap: 0;
+        padding: 0;
+    }
+    
+    figure {
+        width: 30%;
+        height: 50%;
+        display: flex;
+        justify-content: start;
+    }
+
+    .categorias {
+        height: auto;
+        padding-left: 0;
+    }
+
+    .botoes-login {
+        width: auto;
+        justify-content: center;
+        margin-right: 0;
+    }
+
+    .btn {
+        width: auto;
+        margin: 5px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    header {
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        top: 0;
+    }
+
+    figure {
+        justify-content: center;
+        width: 0;
+        height: 50px;
+    }
+
+}

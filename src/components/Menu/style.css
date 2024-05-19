@@ -73,3 +73,29 @@ ul li.item-menu a .icon svg {
 ul li.item-menu a:hover{
     color: black;
 }
+
+@media screen and (max-width: 425px) {
+    nav.menu-lateral {
+        width: 50px;
+        padding: 20px 0 20px 1%;
+        margin-top: 8vh;
+    }
+
+    nav.menu-lateral:hover {
+        width: 200px;
+    }
+
+    ul li.item-menu a {
+        padding: 10px 4%;
+    }
+
+    ul li.item-menu a .txt-link {
+        margin-left: 20px;
+        font-size: 10pt;
+    }
+
+    ul li.item-menu a .icon svg {
+        font-size: 24px;
+        margin-top: 4px;
+    }
+}

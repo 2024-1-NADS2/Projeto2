@@ -1,3 +1,9 @@
+.content-flex {
+    display: flex;
+    height: auto;
+    width: auto;
+}
+
 .container-cards-SN {
     height: 600px;
     display: flex;
@@ -86,4 +92,24 @@
     color: white;
     border-color: white;
     
+}
+
+@media screen and (max-width: 768px) {
+    .container-cards-SN {
+        max-width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .container-cards-SN {
+        max-width: 300px;
+        height: auto;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
 }
