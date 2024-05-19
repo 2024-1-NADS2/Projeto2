@@ -1,5 +1,12 @@
+.home-content-main {
+    display: flex;
+    flex-direction: column;
+}
+.content-flex{
+    display: flex;
+}
 .home-content{
-    margin-top: 20px;
+    margin-top: 100px;
     height: 500px;
     display: flex;
     align-items: center;
@@ -9,9 +16,9 @@
 }
 
 .home-content-welcome{
-    background-color: rgb(221, 218, 218);
-    width: 410px;
-    height: 400px;
+    background-color: rgb(255, 239, 19);
+    width: 510px;
+    height: 500px;
     clip-path: polygon(6% 0, 94% 0, 100% 6%, 100% 94%, 95% 100%, 5% 100%, 0 94%, 0 6%);
     display: flex;
     justify-content: center;
@@ -20,10 +27,10 @@
 }
 
 .home-content-welcome-small{
-    height: 398px;
-    width: 404px;
+    height: 498px;
+    width: 504px;
     margin-top: 2px;
-    background-color: rgb(158, 156, 156);
+    background-color: rgb(18, 18, 54);
     clip-path: polygon(6.5% 0.5%, 93.5% 0.5%, 99.5% 6.5%, 99.5% 93.5%, 0.5% 93.5%, 0.5% 6.5%);
 }
 .home-content-welcome-small-show{
@@ -62,18 +69,20 @@
     font-size: 0.8rem;
     padding: 10px;
     cursor: pointer;
+    color: white;
 }
 
 .home-content-welcome-small-show-schools button:hover{
     background-color: white;
     border-color: black;
+    color: black;
 }
 .home-content-welcome2{
     font-family: "Chakra Petch", sans-serif;
     margin-top: 0;
-    font-size: 1.550rem;
+    font-size: 1.6rem;
     line-height: 170%;
-    color: black;
+    color:black;
     padding: 0 20px 0 20px;
     display: flex;
     align-items: center;
@@ -87,7 +96,145 @@
 
 .home-content-welcome2-text{
     color: black;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     line-height: 130%;
     
 }
+
+.home-content-colaborador{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 500px;
+    margin-top: 20px;
+    gap: 10px;
+    padding: 0 150px 0 180px;
+}
+
+.home-content-colaborador1{
+    font-family: "Chakra Petch", sans-serif;
+    margin-top: 0;
+    font-size: 1.5rem;
+    line-height: 170%;
+    color:black;
+    padding: 0 20px 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 630px;
+    height: 350px;
+    
+
+}
+
+.home-content-colaborador1-text1{
+    
+}
+
+.home-content-colaborador1-text2{
+    color: black;
+    font-size: 1.5rem;
+    line-height: 130%;
+}
+
+.instituto-mold{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 526px;
+    height: 326px;
+    background-color: rgb(255, 239, 19);
+}
+.home-content-cards{
+    margin-top: 150px;
+    height: 700px;
+    display: flex;
+    align-items: center;
+    padding: 0 225px 0 150px;
+    justify-content: center;
+    gap: 100px; 
+    flex-direction: column;
+}
+
+.home-content-cards-container{
+    display: flex;
+    gap: 50px;
+}
+
+.home-content-cards-msg{
+    font-size: 1.8rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.home-content-card1{
+    height: 480px;
+    width: 400px;
+    background-color: rgb(255, 239, 19);
+    clip-path: polygon(100% 0, 100% 90%, 90% 100%, 0 100%, 0 0);
+}
+
+.home-content-card2{
+    height: 480px;
+    width: 400px;
+    background-color: rgb(255, 239, 19);
+    clip-path: polygon(100% 0, 100% 90%, 90% 100%, 0 100%, 0 0);
+}
+
+.home-content-card3{
+    height: 480px;
+    width: 400px;
+    background-color: rgb(255, 239, 19);
+    clip-path: polygon(100% 0, 100% 90%, 90% 100%, 0 100%, 0 0);
+}
+.home-content-card-small{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: 0.5px;
+    height: 478px;
+    width: 398px;
+    clip-path: polygon(99% 1%, 99% 90%, 90% 99%, 1% 99%, 1% 1%);
+    background-color: rgb(18, 18, 54);
+
+}
+
+.home-card{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.home-card-head{
+    display: flex;
+    flex-direction: column;
+    padding-left: 8%;
+    padding-top: 10%;
+    gap: 2px;
+    align-items: start;
+}
+
+.card-icon{
+    color: yellow;
+    font-size: 4rem;
+}
+
+.card-title{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    font-size: 2rem;
+}
+
+.home-card-content{
+    font-family: "Chakra Petch", sans-serif;
+    font-size: 1.2rem;
+    text-align: justify;
+    color: white;
+    padding-bottom: 15%;
+    padding-left:  25px;
+    padding-right: 25px;
+    height: 50%;
+}
+

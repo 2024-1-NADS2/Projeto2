@@ -1,5 +1,89 @@
-.container-cards-SN{
+.container-cards-SN {
+    height: 600px;
     display: flex;
-    
+    justify-content: center;
+    gap: 50px;
     margin-top: 80px;
+}
+
+.container-dados-SN {
+    display: flex;
+    background-color: rgba(64, 63, 63, 0.856);
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    gap: 20px;
+    color: white;
+    padding: 10px;
+
+}
+
+.container-dados-SN img {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    border: 5px solid rgb(18, 18, 54);
+    border-radius: 50%;
+}
+
+.container-dados-info{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.5rem;
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-dados-name{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 700;
+    gap: 30px;
+}
+.container-dados-desc{
+    color: rgba(173, 173, 173, 0.893);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    font-size: 1.4rem;
+}
+
+.container-dados-subdesc{
+    font-size: 0.9rem;
+    color: rgba(206, 206, 209, 0.847);
+}
+
+.container-dados-desc-icons{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+.container-dados-desc-icons button{
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    color: rgb(118, 118, 118);
+    background: none;
+    border: solid 1px rgb(118, 118, 118);
+    border-radius: 50px;
+    padding: 10px;
+    cursor: pointer;
+    
+}
+
+.container-dados-desc-icons button:hover{
+    color: white;
+    border-color: white;
+    
 }

@@ -1,9 +1,9 @@
 .Feed{
-    background-color: rgb(247, 245, 245);
+    background-color: rgba(195, 191, 191, 0.963);
     margin-top: 10vh;
     height: 100%;
     width: 100%;
     margin-left: 80px;
     padding-left: 10px;
-    position: fixed;
+    
 }
