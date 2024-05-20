@@ -242,17 +242,18 @@
     height: 50%;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {   
     .content-flex {
-        width: 100%;
-        height: auto;
+        overflow: hidden;
+        max-width: 100%;
+        margin: 0 auto;
         flex-direction: column;
     }
 
     .home-content {
-        max-width: 100%;
+        width: 98%;
         flex-direction: column;
-        padding: 0 20px;
+        padding: 0;
         gap: 40px;
     }
 
@@ -260,21 +261,24 @@
     .home-content-welcome-small,
     .home-content-welcome2 {
         flex-direction: column;
-        max-width: 100%;
+        width: 100%;
         height: 300px;
     }
 
     .home-content-colaborador,
     .home-content-colaborador1  {
         margin-top: 50px;
-        width: 100%auto;
+        width: auto;
         height: auto;
         flex-direction: column;
     }
 
+    .home-content-colaborador1-text2 {
+        margin-bottom: 30px;
+    }
+
     .home-content-cards-container,
     .home-content-cards {
-        max-width: 100%;;
         height: auto;
         flex-direction: column;
     }
@@ -287,18 +291,14 @@
 
 @media screen and (max-width: 425px) {
     .content-flex {
-        max-width: fit-content;
-        width: 100%;
-        height: 100%;
-        flex-direction: column;
-        align-items: center;
+        overflow: hidden;
+        max-width: 100%;
+        margin: 0 auto;
     }
 
     .home-content {
-        max-width: fit-content;
-        width: 100%;
+        width: 98%;
         height: auto;
-        flex-direction: column;
         padding: 0 10px;
         gap: 20px;
     }
@@ -306,28 +306,25 @@
     .home-content-welcome,
     .home-content-welcome-small,
     .home-content-welcome2 {
-        flex-direction: column;
-        max-width: fit-content;
         width: 100%;
-        height: auto;
+        height: 450px;
     }
 
     .home-content-colaborador,
-    .home-content-colaborador1,
-    .home-content-colaborador1-text2 {
-        margin-top: 50px;
-        max-width: 500px;
-        height: auto;
+    .home-content-colaborador1 {
+        margin-top: 30px;
         flex-direction: column;
+        text-align: center;
+    }
+
+    .home-content-colaborador1-text2 {
+        overflow-wrap: break-word
     }
 
     .home-content-cards-container,
     .home-content-cards {
-        flex-direction: column;
-        max-width: fit-content;
-        width: 100%;
         height: auto;
-        align-items: center;
+        flex-direction: column;
     }
 
     .home-content-cards-msg {

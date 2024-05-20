@@ -95,3 +95,17 @@ body * {
     text-align: center;
     margin-top: 20px; 
 }
+
+@media screen and (max-width: 425px) {
+    .container-login {
+        flex-direction: column;
+    }
+
+    .container-image-login {
+        height: 30%;
+    }
+    
+    .container-campo-form {
+        width: fit-content;
+    }
+}

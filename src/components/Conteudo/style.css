@@ -2,7 +2,7 @@
     background-color: rgba(195, 191, 191, 0.963);
     margin-top: 10vh;
     height: 100%;
-    width: 100%;
+    width: calc(100% - 80px);
     margin-left: 80px;
     padding-left: 10px;
     
