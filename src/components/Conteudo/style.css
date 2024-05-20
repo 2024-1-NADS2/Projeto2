@@ -1,6 +1,7 @@
 .Feed{
-    background-color: rgba(195, 191, 191, 0.963);
+    background-color: rgba(210, 210, 210, 0.963);
     margin-top: 10vh;
+    min-height: 100vh;
     height: 100%;
     width: 100%;
     margin-left: 80px;

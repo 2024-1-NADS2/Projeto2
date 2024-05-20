@@ -4,7 +4,7 @@ import Sobrenos from "./pages/SobreNos/Sobrenos";
 import Contato from "./pages/Contato/Contato";
 import Login from "./pages/Login/Login";
 import Cadastro from "./pages/Cadastro/Cadastro";
-import Organizações from "./pages/Cursos/Organizações";
+import Organizações from "./pages/Organizaçoes/Organizações";
 import Recuperarsenha from "./pages/RecuperarSenha/Recuperarsenha";
 function AppRoutes(){
     return(

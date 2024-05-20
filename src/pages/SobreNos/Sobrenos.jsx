@@ -4,7 +4,9 @@ import Menu from '../../components/Menu/Menu.jsx';
 import Conteudo from '../../components/Conteudo/Conteudo.jsx';
 import Card from '../../components/Card/Card.jsx';
 import style from './style.css';
-import logoGiovanne from '../../components/img/GiovanneBraga-perfil.jpg'
+import logoBraga from '../../components/img/GiovanneBraga-perfil.jpg'
+import logoIcaro from '../../components/img/IcaroLuiz-perfil.jpg'
+import logoEstevan from '../../components/img/GiovaneEstevan-perfil.jpg'
 import { BsEnvelopeFill, BsGithub, BsLinkedin } from "react-icons/bs";
 
 
@@ -21,7 +23,7 @@ export default function Sobrenos() {
 
                                 <div className='container-dados-info'>
                                     <div className='container-dados-name'>
-                                        <img src={logoGiovanne} alt="Giovanne" />
+                                        <img src={logoBraga} alt="Giovanne" />
                                         Giovanne Braga
                                     </div>
 
@@ -31,10 +33,10 @@ export default function Sobrenos() {
                                             19 anos | Analise e desenvolvimento de Sistemas | FECAP
                                         </div>
                                         <div className='container-dados-desc-icons'>
-                                            <button> <BsGithub/> </button>
-                                            <button> <BsLinkedin/> </button>
-                                            <button> <BsEnvelopeFill/> </button>
-                                            
+                                            <button> <BsGithub /> </button>
+                                            <button> <BsLinkedin /> </button>
+                                            <button> <BsEnvelopeFill /> </button>
+
                                         </div>
                                     </div>
 
@@ -44,13 +46,51 @@ export default function Sobrenos() {
                         </Card>
                         <Card>
                             <div className="container-dados-SN">
+                                <div className='container-dados-info'>
+                                    <div className='container-dados-name'>
+                                        <img src={logoIcaro} alt="Giovanne" />
+                                        Icaro Luiz
+                                    </div>
 
+                                    <div className='container-dados-desc'>
+                                        Desenvolvedor Front-End
+                                        <div className='container-dados-subdesc'>
+                                            19 anos | Analise e desenvolvimento de Sistemas | FECAP
+                                        </div>
+                                        <div className='container-dados-desc-icons'>
+                                            <button> <BsGithub /> </button>
+                                            <button> <BsLinkedin /> </button>
+                                            <button> <BsEnvelopeFill /> </button>
+
+                                        </div>
+                                    </div>
+
+                                </div>
                             </div>
 
                         </Card>
                         <Card>
                             <div className="container-dados-SN">
+                                <div className='container-dados-info'>
+                                    <div className='container-dados-name'>
+                                        <img src={logoEstevan} alt="GiovaneEstevan" />
+                                        Giovane Estevan
+                                    </div>
 
+                                    <div className='container-dados-desc'>
+                                        Desenvolvedor Front-End
+                                        <div className='container-dados-subdesc'>
+                                            27 anos | Analise e desenvolvimento de Sistemas | FECAP
+                                        </div>
+                                        <div className='container-dados-desc-icons'>
+                                            <button> <BsGithub /> </button>
+                                            <button> <BsLinkedin /> </button>
+                                            <button> <BsEnvelopeFill /> </button>
+
+                                        </div>
+                                    </div>
+
+                                </div>
                             </div>
 
                         </Card>
