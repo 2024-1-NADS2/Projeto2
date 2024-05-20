@@ -23,6 +23,7 @@ export default function Login(){
                     <h1>login</h1>
                 </div>
                 <div className="container-inputs-form">
+                    <label >Email</label>
                     <input 
                     type="text" 
                     placeholder="Email"
@@ -31,6 +32,7 @@ export default function Login(){
                     required/>
                 </div>
                 <div className="container-inputs-form">
+                    <label >Senha</label>
                     <input 
                     type="Password" 
                     placeholder="Senha" 
@@ -40,13 +42,11 @@ export default function Login(){
                 </div>
                 <Link to="/recuperarsenha">
                     <div className="container-alt-form">
-                    <label htmlFor="altpassword"></label>
                     <a >Alterar senha</a>
                     </div>
                 </Link>
                 <Link to="/cadastro">
                     <div className="container-criar-form">
-                     <label htmlFor="criarcont"></label>
                      <a >Criar Conta</a>   
                     </div>
                 </Link>

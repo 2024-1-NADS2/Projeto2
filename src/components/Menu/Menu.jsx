@@ -29,9 +29,9 @@ export default function Menu() {
                     </Link>
                 </li>
                 <li className="item-menu">
-                    <Link to="/contato">
+                    <Link to="/cursos">
                         <span className="icon"><BsTelephone/></span>
-                        <span className="txt-link">Contato</span>
+                        <span className="txt-link">Cursos</span>
                     </Link>
                 </li>
             </ul>
