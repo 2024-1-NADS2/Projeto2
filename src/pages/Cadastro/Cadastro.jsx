@@ -34,26 +34,28 @@ export default function Cadastro(){
 
                 
                 <div className="container-inputs-form-register">
-                  <label ></label>
+                  <label >Nome</label>
                     <input 
                     type="text" 
-                    placeholder="Nome"
+                    placeholder="Sergio"
                     value={nome} 
                     onChange={e => setNome(e.target.value)}
                     required/>
                 </div>
                 <div className="container-inputs-form-register">
+                  <label >Email</label>
                     <input 
                     type="text" 
-                    placeholder="Email"
+                    placeholder="kkkkk@gmail.com"
                     value={email} 
                     onChange={e => setEmail(e.target.value)}
                     required/>
                 </div>
                 <div className="container-inputs-form-register">
+                  <label >Senha</label>
                     <input 
                     type="Password" 
-                    placeholder="Senha" 
+                    placeholder="12345" 
                     value={password}
                     onChange={e => setPassword(e.target.value)}
                     required/>
@@ -62,50 +64,50 @@ export default function Cadastro(){
                 {tipoUsuario === 'ong' && (
             <>
               <div className="container-inputs-form-register">
-                <label >Ex:00.000.000/0000-00</label>
+                <label >CNPJ</label>
                 <input
                   type="text"
-                  placeholder="Cnpj"
+                  placeholder="00.000.000/0000-00"
                   value={cnpj}
                   onChange={e => setCnpj(e.target.value)}
                   required
                 />
               </div>
               <div className="container-inputs-form-register">
-                <label ></label>
+                <label >Cidade</label>
                 <input
                   type="text"
-                  placeholder="Cidade"
+                  placeholder="São Paulo"
                   value={cidade}
                   onChange={e => setCidade(e.target.value)}
                   required
                 />
               </div>
               <div className="container-inputs-form-register">
-                <label ></label>
+                <label >Rua</label>
                 <input
                   type="text"
-                  placeholder="Rua"
+                  placeholder="Rua das Canoas"
                   value={rua}
                   onChange={e => setRua(e.target.value)}
                   required
                 />
               </div>
               <div className="container-inputs-form-register">
-                <label ></label>
+                <label >Numero</label>
                 <input
                   type="text"
-                  placeholder="Numero de Endereço"
+                  placeholder="802"
                   value={numeroEndereco}
                   onChange={e => setNumeroEndereco(e.target.value)}
                   required
                 />
               </div>
               <div className="container-inputs-form-register">
-                <label ></label>
+                <label >Telefone</label>
                 <input
                   type="text"
-                  placeholder="telefone"
+                  placeholder="11 98787-5862"
                   value={telefone}
                   onChange={e => setTelefone(e.target.value)}
                   required
@@ -116,7 +118,6 @@ export default function Cadastro(){
 
                    <Link to="/login">
                     <div className="container-Ihaveanaccount-form">
-                     <label ></label>
                      <a >ja possui conta</a>   
                     </div>
                     </Link>

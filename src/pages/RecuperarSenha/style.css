@@ -50,6 +50,9 @@ body * {
     font-size: 14pt;
     outline: none;
 }
+.container-inputs-form-change-password > label{
+    color: rgb(255, 238, 1);
+}
 
 .container-button-form-change-password{
     width: 50%; 

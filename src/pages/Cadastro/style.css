@@ -17,25 +17,25 @@ body * {
 
 .container-register-form {
     width: 100%;
-    max-width: 400px; /* Adicionado para limitar a largura máxima do formulário */
-    padding: 30px 20px; /* Adicionado para melhorar o espaçamento interno */
+    max-width: 400px; 
+    padding: 30px 20px; 
     background-color: rgb(18, 18, 54);
     border-radius: 10px;
     display: flex;
-    flex-direction: column; /* Mudança para coluna */
-    align-items: center; /* Centraliza os itens */
+    flex-direction: column; 
+    align-items: center; 
 }
 
 .container-title-form-register {
     color: white;
     margin-bottom: 20px; 
-    font-weight: 800;
+    font-weight: 500;
     text-transform: uppercase;
+    text-align: center;
 }
 
 select {
     width: 100%; 
-    margin-bottom: 10px; 
     padding: 10px; 
     border: none;
     border-radius: 10px;
@@ -46,10 +46,12 @@ select {
     color: rgb(18, 18, 54);
     background-color: white;
     cursor: pointer;
+    text-align: center;
 }
 
-select > label {
+.container-select-register{
     color: rgb(255, 238, 1);
+    text-align: center;
 }
 
 .container-inputs-form-register {
@@ -57,14 +59,17 @@ select > label {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-bottom: 10px; 
+    margin-bottom: 5px; 
+}
+.container-inputs-form-register > label{
+    color: rgb(255, 238, 1);
 }
 
 .container-inputs-form-register > input {
     width: 100%; 
     border-radius: 10px;
     border: none;
-    padding: 15px;
+    padding: 12px;
     background-color: white;
     font-size: 14pt;
     outline: none;
@@ -75,6 +80,7 @@ select > label {
     margin: 10px 0px;
     text-decoration: none;
     color: rgb(255, 238, 1); 
+    text-align: center;
 }
 
 .container-button-form-register {
