@@ -14,6 +14,7 @@ export default function Curso() {
                 <div className="content-flex">
                     <Menu />
                     <Conteudo>
+                        <h1></h1>
                         <section className='container-cards-cursos'>
                             <div className="container-field-curso">
                                 <div className="container-conteudo-curso">

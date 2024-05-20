@@ -33,10 +33,15 @@ export default function Sobrenos() {
                                             19 anos | Analise e desenvolvimento de Sistemas | FECAP
                                         </div>
                                         <div className='container-dados-desc-icons'>
-                                            <button> <BsGithub /> </button>
-                                            <button> <BsLinkedin /> </button>
-                                            <button> <BsEnvelopeFill /> </button>
-
+                                            <a href="https://github.com/giovannebraga10">
+                                                <button> <BsGithub /> </button>
+                                            </a>
+                                            <a href="https://www.linkedin.com/in/giovanne-braga-0a4288280/">
+                                                <button> <BsLinkedin /> </button>
+                                            </a>
+                                            <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=GTvVlcSGLdbRwVFnfHcsPdzmkjGbvtVRhSKRpCzncqKTRlWmMrGcgTdCCFhcrMvlLvFMxrsTcKdNw">
+                                                <button> <BsEnvelopeFill /> </button>
+                                            </a>
                                         </div>
                                     </div>
 
