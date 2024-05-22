@@ -12,7 +12,7 @@ body * {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(255, 238, 1);
+    background-color: rgba(255, 255, 255, 0.541);
 }
 
 .container-register-form {
@@ -50,29 +50,66 @@ select {
 }
 
 .container-select-register{
-    color: rgb(255, 238, 1);
+    color: white;
     text-align: center;
 }
 
 .container-inputs-form-register {
-    width: 100%; 
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    margin-bottom: 5px; 
+    gap: 15px;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 15px; 
 }
 .container-inputs-form-register > label{
-    color: rgb(255, 238, 1);
+    color: white;
 }
 
 .container-inputs-form-register > input {
-    width: 100%; 
-    border-radius: 10px;
+    width: 100%;
+    border-radius: 5px;
     border: none;
-    padding: 12px;
+    padding: 16px;
     background-color: white;
-    font-size: 14pt;
+    font-size: 11pt;
     outline: none;
+    box-sizing: border-box;
+    margin-bottom: 0px;
+}
+.container-inputs-form-register{
+    color: white;
+    font-size: 1.4rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container-handleNext-register {
+    width: 100%; 
+    padding: 15px 0px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: rgb(18, 18, 54);
+    background-color: white;
+    cursor: pointer;
+    text-align: center;
+}
+.container-handleBack-register{
+    width: 100%; 
+    padding: 5px 0px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: rgb(18, 18, 54);
+    background-color: white;
+    cursor: pointer;
+    text-align: center;
+    margin-bottom: 10px;
 }
 
 .container-Ihaveanaccount-form {

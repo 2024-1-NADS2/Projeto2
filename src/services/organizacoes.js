@@ -28,5 +28,15 @@ export async function obterOrganizacoes() {
             email: 'qualquer3@email.com',
             telefone: '987655432113'
         },
+        {
+            nome: 'Organização 3',
+            imagem: 'https://observatorio3setor.org.br/wp-content/uploads/2015/08/reduca.jpg',
+            descricao: 'descrição da org3',
+            cnpj: '123456789012343',
+            endereco: 'rua qualquer, n 103',
+            email: 'qualquer3@email.com',
+            telefone: '987655432113'
+        }
+
     ]
 }

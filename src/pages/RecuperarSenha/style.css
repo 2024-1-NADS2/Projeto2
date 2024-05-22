@@ -12,7 +12,7 @@ body * {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(255, 238, 1);
+    background-color: rgba(255, 255, 255, 0.541);
 }
 
 .container-change-password-form {
@@ -42,16 +42,23 @@ body * {
 }
 
 .container-inputs-form-change-password > input {
-    width: 100%; 
-    border-radius: 10px;
+    width: 100%;
+    border-radius: 5px;
     border: none;
-    padding: 15px;
+    padding: 17px;
     background-color: white;
-    font-size: 14pt;
+    font-size: 11pt;
     outline: none;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+.container-inputs-form-change-password{
+    color: white;
+    font-size: 1.4rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .container-inputs-form-change-password > label{
-    color: rgb(255, 238, 1);
+    margin-bottom: 10px;
 }
 
 .container-button-form-change-password{

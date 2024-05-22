@@ -24,7 +24,7 @@ export default function Recuperarsenha(){
                 </div>
 
                 <div className="container-inputs-form-change-password">
-                    <label >Email</label>
+                    <label >Email:</label>
                     <input
                         type="email"
                         placeholder="Email"
@@ -34,7 +34,7 @@ export default function Recuperarsenha(){
                     />
                 </div>
                 <div className="container-inputs-form-change-password">
-                    <label >Nova Senha</label>
+                    <label >Nova Senha:</label>
                     <input
                         type="password"
                         placeholder="Nova Senha"
@@ -44,7 +44,7 @@ export default function Recuperarsenha(){
                     />
                 </div>
                 <div className="container-inputs-form-change-password">
-                    <label >Confirmar Senha</label>
+                    <label >Confirmar Senha:</label>
                     <input
                         type="password"
                         placeholder="Confirmar Nova Senha"

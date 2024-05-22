@@ -12,24 +12,11 @@ body * {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(255, 238, 1);
-}
-
-.container-image-login {
-    width: 50vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.container-image-login > h1 {
-    color: rgb(18, 18, 54);
+    background-color: rgba(255, 255, 255, 0.541);
 }
 
 .container-login-form {
-    width: 50vw;
+    width: 100vw;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -37,7 +24,7 @@ body * {
 }
 
 .container-campo-form {
-    width: 60%;
+    width: 30%;
     padding: 30px 35px;
     background-color: rgb(18, 18, 54);
     border-radius: 10px;
@@ -97,8 +84,14 @@ body * {
     text-decoration: none;
 }
 
+.container-criar-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .container-button-form {
-    width: 100%;
+    width: 300px;
     font-size: 1rem;
     padding: 4px 15px;
     border: none;
@@ -110,3 +103,4 @@ body * {
     text-align: center;
     margin-top: 20px; 
 }
+

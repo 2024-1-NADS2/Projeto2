@@ -16,9 +16,6 @@ export default function Login() {
 
         <body>
             <div className="container-login">
-                <div className="container-image-login">
-                    <h1>VENHA APRENDER</h1>
-                </div>
                 <form className="container-login-form">
                     <div className="container-campo-form">
                         <div className="container-title-form">
@@ -27,7 +24,7 @@ export default function Login() {
                         <div className="container-inputs-form">
                             <label >Email: </label>
                             <input
-                                type="text"
+                                type="email"
                                 placeholder="Email"
                                 value={email}
                                 onChange={e => setEmail(e.target.value)}
@@ -53,10 +50,11 @@ export default function Login() {
                             </div>
                         </Link>
 
-                        <Link to="/">
-                            <button type="submit" className="container-button-form" href='#'>Login</button>
-                        </Link>
-
+                        <div className="container-login-teste">
+                            <Link to="/">
+                                <button type="submit" className="container-button-form" >Login</button>
+                            </Link>
+                        </div>
                     </div>
 
                 </form>
