@@ -7,3 +7,10 @@
     width: 100%;
     gap: 30px;
 }
+
+@media screen and (max-width: 768px) {
+    .section-cards-orgs{
+        height: auto;
+        flex-direction: column;
+    }
+}   

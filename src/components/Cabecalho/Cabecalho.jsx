@@ -25,8 +25,6 @@ export default function Cabecalho() {
                     <a href="#">ORIENTAÇÂO A OBJETO</a>
                 </div>
             </nav>
-            <input type="text" placeholder="Pesquise oque deseja encontrar" />
-            <a className="texto">Seja um colaborador</a>
             <div className="botoes-login">
                 <Link to="/login" className='linksemsublinhado'>
                     <button className="btn">Fazer login</button>
