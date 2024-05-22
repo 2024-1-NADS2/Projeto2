@@ -87,3 +87,18 @@
     border-color: white;
     
 }
+
+@media screen and (max-width: 768px) {
+    .content-flex {
+        overflow: hidden;
+        max-width: 100%;
+        margin: 0 auto;
+        flex-direction: column;
+    }
+    .container-cards-SN{
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
