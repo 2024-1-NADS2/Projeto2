@@ -18,7 +18,7 @@
 
 ## Descrição:
 
-O EducaFácil é uma plataforma educacional online desenvolvida para facilitar o acesso de alunos a materiais escolares e videoaulas. O sistema permite que ONGs façam upload de conteúdos educativos, categorizados por tema e nível de ensino. A arquitetura é composta por uma camada de apresentação (frontend) em React, uma camada de aplicação (backend) com Node.js e Express.js, e um banco de dados SQL. Focado em segurança, desempenho, escalabilidade e usabilidade, o EducaFácil visa proporcionar educação de qualidade e apoiar a missão educativa das ONGs.
+O EducaFácil é uma plataforma educacional online desenvolvida para facilitar o acesso de alunos a materiais escolares e videoaulas. O sistema permite que ONGs façam upload de conteúdos educativos, categorizados por tema e nível de ensino. A arquitetura é composta por uma camada de apresentação (frontend) em React, uma camada de aplicação (backend) com C# e Entity, e um banco de dados SQL. Focado em segurança, desempenho, escalabilidade e usabilidade, o EducaFácil visa proporcionar educação de qualidade e apoiar a missão educativa das ONGs.
 <br><br>
 
 ## 🛠 Estrutura de pastas
@@ -30,8 +30,8 @@ O EducaFácil é uma plataforma educacional online desenvolvida para facilitar o
  &emsp;|PI_Modelagem de Software.docx<br>
  &emsp;|Projeto_de_Extensão_EducaFacil.pdf<br>
  &emsp;|Projeto_de_Extensão_EducaFacil.docx<br>
-|-->imagens<br>
 |-->Backend<br>
+ &emsp;|-->.vs<br>
  &emsp;|-->educafacilapi<br>
 |-->Frontend<br>
  &emsp;|-->src<br>
