@@ -26,11 +26,17 @@ O EducaFácil é uma plataforma educacional online desenvolvida para facilitar o
 -Raiz<br>
 |<br>
 |-->documentos<br>
- &emsp;|Documentação.docx<br>
+ &emsp;|PI_Modelagem de Software.pdf<br>
+ &emsp;|PI_Modelagem de Software.docx<br>
+ &emsp;|Projeto_de_Extensão_EducaFacil.pdf<br>
+ &emsp;|Projeto_de_Extensão_EducaFacil.docx<br>
 |-->imagens<br>
-|-->src<br>
- &emsp;|-->Backend<br>
- &emsp;|-->Frontend<br>
+|-->Backend<br>
+ &emsp;|-->educafacilapi<br>
+|-->Frontend<br>
+ &emsp;|-->src<br>
+ &emsp;|-->public<br>
+
 |readme.md<br>
 
 ## 💻 Configuração para Desenvolvimento:
