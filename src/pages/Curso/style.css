@@ -1,9 +1,0 @@
-.column-flex{
-    display: flex;
-    flex-direction: column;
-}
-
-.content-cursos{
-    min-height: 100vh;
-    min-width: 100vh;
-}
