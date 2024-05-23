@@ -10,37 +10,13 @@ export default function Curso() {
     return (
         <>
             <Cabecalho />
-            <div className="home content-flex">
-                <div className="content-flex">
-                    <Menu />
-                    <Conteudo>
-                        <h1></h1>
-                        <section className='container-cards-cursos'>
-                            <div className="container-field-curso">
-                                <div className="container-conteudo-curso">
+            <div className="content-flex">
+                <Menu />
+                <Conteudo>
 
-                                </div>
-                            </div>
-                            <div className="container-field-curso">
-                                <div className="container-conteudo-curso">
-
-                                </div>
-                            </div>
-                            <div className="container-field-curso">
-                                <div className="container-conteudo-curso">
-
-                                </div>
-                            </div>
-                            <div className="container-field-curso">
-                                <div className="container-conteudo-curso">
-
-                                </div>
-                            </div>
-                        </section>
-                    </Conteudo>
-                </div>
-                <Rodape />
+                </Conteudo>
             </div>
+            <Rodape />
         </>
     )
 }

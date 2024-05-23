@@ -6,10 +6,12 @@ import Login from "./pages/Login/Login";
 import Cadastro from "./pages/Cadastro/Cadastro";
 import Organizações from "./pages/Organizaçoes/Organizações";
 import Recuperarsenha from "./pages/RecuperarSenha/Recuperarsenha";
+import PerfilOrg from "./pages/PerfilOrg/PerfilOrg";
 function AppRoutes(){
     return(
         <BrowserRouter>
             <Routes>
+                <Route path="/perfilorganizacoes" element={<PerfilOrg/>}></Route>
                 <Route path="/" element={<Home/>}></Route>
                 <Route path="/organizações" element={<Organizações/>}></Route>
                 <Route path="/sobrenos" element={<Sobrenos/>}></Route>
