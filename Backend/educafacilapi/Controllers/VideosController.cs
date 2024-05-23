@@ -12,47 +12,47 @@ namespace educafacilapi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class OrganizacoesController : ControllerBase
+    public class VideosController : ControllerBase
     {
         private readonly EducaFacilDbContext _context;
 
-        public OrganizacoesController(EducaFacilDbContext context)
+        public VideosController(EducaFacilDbContext context)
         {
             _context = context;
         }
 
-        // GET: api/Organizacoes
+        // GET: api/Videos
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Organizacoes>>> GetOrganizacoes()
+        public async Task<ActionResult<IEnumerable<Videos>>> GetVideos()
         {
-            return await _context.Organizacoes.Include(o => o.Cursos).ToListAsync();
+            return await _context.Videos.ToListAsync();
         }
 
-        // GET: api/Organizacoes/5
+        // GET: api/Videos/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<Organizacoes>> GetOrganizacoes(int id)
+        public async Task<ActionResult<Videos>> GetVideos(int id)
         {
-            var organizacoes = await _context.Organizacoes.FindAsync(id);
+            var videos = await _context.Videos.FindAsync(id);
 
-            if (organizacoes == null)
+            if (videos == null)
             {
                 return NotFound();
             }
 
-            return organizacoes;
+            return videos;
         }
 
-        // PUT: api/Organizacoes/5
+        // PUT: api/Videos/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutOrganizacoes(int id, Organizacoes organizacoes)
+        public async Task<IActionResult> PutVideos(int id, Videos videos)
         {
-            if (id != organizacoes.Id)
+            if (id != videos.Id)
             {
                 return BadRequest();
             }
 
-            _context.Entry(organizacoes).State = EntityState.Modified;
+            _context.Entry(videos).State = EntityState.Modified;
 
             try
             {
@@ -60,7 +60,7 @@ namespace educafacilapi.Controllers
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!OrganizacoesExists(id))
+                if (!VideosExists(id))
                 {
                     return NotFound();
                 }
@@ -73,36 +73,36 @@ namespace educafacilapi.Controllers
             return NoContent();
         }
 
-        // POST: api/Organizacoes
+        // POST: api/Videos
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
-        public async Task<ActionResult<Organizacoes>> PostOrganizacoes(Organizacoes organizacoes)
+        public async Task<ActionResult<Videos>> PostVideos(Videos videos)
         {
-            _context.Organizacoes.Add(organizacoes);
+            _context.Videos.Add(videos);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetOrganizacoes", new { id = organizacoes.Id }, organizacoes);
+            return CreatedAtAction("GetVideos", new { id = videos.Id }, videos);
         }
 
-        // DELETE: api/Organizacoes/5
+        // DELETE: api/Videos/5
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteOrganizacoes(int id)
+        public async Task<IActionResult> DeleteVideos(int id)
         {
-            var organizacoes = await _context.Organizacoes.FindAsync(id);
-            if (organizacoes == null)
+            var videos = await _context.Videos.FindAsync(id);
+            if (videos == null)
             {
                 return NotFound();
             }
 
-            _context.Organizacoes.Remove(organizacoes);
+            _context.Videos.Remove(videos);
             await _context.SaveChangesAsync();
 
             return NoContent();
         }
 
-        private bool OrganizacoesExists(int id)
+        private bool VideosExists(int id)
         {
-            return _context.Organizacoes.Any(e => e.Id == id);
+            return _context.Videos.Any(e => e.Id == id);
         }
     }
 }

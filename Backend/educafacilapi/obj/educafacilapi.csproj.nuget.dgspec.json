@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Giovanne\\source\\repos\\educafacilapi\\educafacilapi\\educafacilapi.csproj": {}
+    "C:\\Users\\renan\\Documents\\dev\\Projeto2\\Backend\\educafacilapi\\educafacilapi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Giovanne\\source\\repos\\educafacilapi\\educafacilapi\\educafacilapi.csproj": {
+    "C:\\Users\\renan\\Documents\\dev\\Projeto2\\Backend\\educafacilapi\\educafacilapi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Giovanne\\source\\repos\\educafacilapi\\educafacilapi\\educafacilapi.csproj",
+        "projectUniqueName": "C:\\Users\\renan\\Documents\\dev\\Projeto2\\Backend\\educafacilapi\\educafacilapi.csproj",
         "projectName": "educafacilapi",
-        "projectPath": "C:\\Users\\Giovanne\\source\\repos\\educafacilapi\\educafacilapi\\educafacilapi.csproj",
-        "packagesPath": "C:\\Users\\Giovanne\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Giovanne\\source\\repos\\educafacilapi\\educafacilapi\\obj\\",
+        "projectPath": "C:\\Users\\renan\\Documents\\dev\\Projeto2\\Backend\\educafacilapi\\educafacilapi.csproj",
+        "packagesPath": "C:\\Users\\renan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\renan\\Documents\\dev\\Projeto2\\Backend\\educafacilapi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Giovanne\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\renan\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

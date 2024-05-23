@@ -1,4 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.Text.Json.Serialization;
+
 
 namespace educafacilapi.Models
 {
@@ -11,7 +13,18 @@ namespace educafacilapi.Models
         [Required]
         public string Professor { get; set; }
         public string Descricao { get; set; }
-        public string CargaHoraria { get; set; }
+        public string? CargaHoraria { get; set; }
+        public string? Tag {  get; set; }
 
+        [Required]
+        public int OrganizacaoId { get; set; }
+        [JsonIgnore]
+        public virtual Organizacoes? Organizacao { get; set; }
+
+        public virtual List<Videos>? Videos { get; set; }
+
+        public Cursos() { 
+            Videos = new List<Videos>();
+        }
     }
 }

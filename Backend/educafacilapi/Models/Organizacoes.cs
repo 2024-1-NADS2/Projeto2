@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 
 namespace educafacilapi.Models
 {
@@ -17,5 +18,11 @@ namespace educafacilapi.Models
         public string Senha { get; set; }
         public string? Telefone { get; set; }
         public string? Logo { get; set; }
+        
+        public virtual List<Cursos>? Cursos { get; set; }
+
+        public Organizacoes() {
+            Cursos = new List<Cursos>();
+        }
     }
 }
