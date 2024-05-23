@@ -12,7 +12,7 @@
 
 # Grupo EducaFácil
 
-## Integrantes: <a href="https://www.linkedin.com/in/giovanne-braga-0a4288280/">Giovanne Braga</a>, <a href="https://www.linkedin.com/in/icaro-luis-dellalo-silva-b8ab60304/">Icaro Silva</a>, <a href="www.linkedin.com/in/giovane-estevan/">Giovane Estevan</a>
+## Integrantes: <a href="https://www.linkedin.com/in/giovanne-braga-0a4288280/">Giovanne Braga</a>, <a href="https://www.linkedin.com/in/icaro-luis-dellalo-silva-b8ab60304/">Icaro Silva</a>, <a href="https://www.linkedin.com/in/giovane-estevan-santos-ramos/">Giovane Estevan</a>
 
 ## Professores Orientadores: <a href="https://www.linkedin.com/in/jos%C3%A9-carlos-buesso-jr-15462234/">José Carlos</a>, <a href="https://www.linkedin.com/in/francisco-escobar/">Francisco Escobar</a>, <a href="https://www.linkedin.com/in/victorbarq/">Victor Quiroz</a>, <a href="https://www.linkedin.com/in/adriano-valente-534576135/">Adriano Valente</a>
 
