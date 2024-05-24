@@ -7,6 +7,7 @@ import Conteudo from "../../components/Conteudo/Conteudo";
 import Rodape from "../../components/Rodapé/Rodape";
 import { MdOutlineModeEdit } from "react-icons/md";
 import Modal from "../../components/Modal/Modal";
+import { BsTrash } from "react-icons/bs";
 
 
 
@@ -75,35 +76,28 @@ export default function PerfilOrg() {
                                 </Modal>
                                 <div className="perfil-content">
                                     <div className="curso-pub">
-                                        <div>
-                                            ThumbNeil
-                                        </div>
-                                        <div className="Info-curso">
-                                            Fazendo uma aplicação do zero com React
-                                        </div>
-                                    </div>
-                                    <div className="curso-pub">
-                                        <div>
-                                            ThumbNeil
-                                        </div>
-                                        <div className="Info-curso">
-                                            Fazendo uma aplicação do zero com React
-                                        </div>
-                                    </div>
-                                    <div className="curso-pub">
-                                        <div>
-                                            ThumbNeil
-                                        </div>
-                                        <div className="Info-curso">
-                                            Fazendo uma aplicação do zero com React
-                                        </div>
-                                    </div>
-                                    <div className="curso-pub">
-                                        <div>
-                                            ThumbNeil
-                                        </div>
-                                        <div className="Info-curso">
-                                            Fazendo uma aplicação do zero com React
+                                        <div className="curso-content-card">
+                                            <div className="info-curso">
+                                                <div className="titulo-curso">
+                                                    Fazendo uma aplicação do zero com React
+                                                </div>
+                                                <div>
+                                                    <button className="botao-excluir"><BsTrash /></button>
+                                                </div>
+                                            </div>
+                                            <div className="sub-info-curso">
+                                                <div className="descricao-curso">
+                                                    descricao do curso
+
+                                                </div>
+                                                <div className="professor-curso">
+                                                    Professor
+                                                </div>
+                                                <div className="carga-curso">
+                                                    10 horas
+                                                </div>
+                                            </div>
+
                                         </div>
                                     </div>
                                 </div>
