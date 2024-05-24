@@ -18,7 +18,8 @@
 
 .perfil-head{
     display: flex;
-    justify-content: space-around;    
+    gap: 100px;
+    justify-content: space-between;    
 }
 
 .logo-perfil-org img{
@@ -31,18 +32,20 @@
 .info-perfil-org{
     display: flex;
     justify-content: center;
-    width: 50%;
+    width: 100%;
 }
 
 .descricao-perfil-org{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 1rem;
     text-align:justify;
-    width: 100%;
+    height: 40px;
+    width: 400px;
     padding: 5px;
     border: 3px solid rgb(241, 239, 239);
     background-color: rgb(157, 159, 161);
     border-radius: 10px;
+    visibility: hidden;
 }
 
 .perfil-dados{
@@ -66,6 +69,7 @@
     justify-content: flex-end;
     padding-right: 2px;
     width: 100%;
+    visibility: hidden;
 }
 
 .pencil-edit{
@@ -180,6 +184,10 @@
     color: rgb(228, 46, 46);
     border: 2px solid rgb(241, 239, 239) ;
     border-radius: 5px;
+}
+
+.name-organizacao{
+    text-wrap: nowrap;
 }
 
 .inputs-info{

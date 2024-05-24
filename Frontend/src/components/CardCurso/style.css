@@ -1,6 +1,5 @@
 .curso-pub{
     display: flex;
-    gap: 50px;
     height: 90px;
     border: 3px solid rgb(241, 239, 239);
     width: 100%;
@@ -12,24 +11,22 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     
 }
 
 .info-curso{
     display: flex;
-    width: 100%;
+    justify-content: center;
+    display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding:2px;
-    
+    text-align: center;
+ 
 }
 
 .sub-info-curso{
     display: flex;
     background-color: #b6b4b7;
     border: 1px solid rgb(241, 239, 239);
-    justify-content: space-between;
     color: #313132ef;
     font-size: 10pt;
     font-weight: 700;
@@ -37,11 +34,10 @@
     padding: 0 10px 0 10px;
 }
 
-.titulo-curso{
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+.titulo-card{
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 1.2rem;
     font-weight: 500;
-    margin-left: 35%;
 }
 
 .professor-curso{
@@ -64,6 +60,20 @@
     padding: 2px;
     font-size: 1.1rem;
     color: rgb(228, 46, 46);
+    border: 2px solid rgb(241, 239, 239) ;
+    border-radius: 5px;
+    
+}
+
+
+.botao-entrar{
+    color: black;
+    background: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    font-size: 1.1rem;
     border: 2px solid rgb(241, 239, 239) ;
     border-radius: 5px;
 }

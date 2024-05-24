@@ -166,3 +166,11 @@ figure {
         margin: 5px;
     }
 }
+
+.botao-sair{
+    font-size: 2rem;
+    background: none;
+    margin-left: 3px;
+    cursor: pointer;
+
+}

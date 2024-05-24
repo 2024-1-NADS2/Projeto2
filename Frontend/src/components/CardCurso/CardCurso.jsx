@@ -7,18 +7,19 @@ import { useNavigate } from "react-router-dom";
 
 
 
-export default function CardCurso({curso}) {
+export default function CardCurso({ curso }) {
     const navigate = useNavigate()
     return (
         <div className="curso-pub">
             <div className="curso-content-card">
                 <div className="info-curso">
-                    <div>
-                        <button className="botao-excluir" onClick={() => { navigate(`/curso/${curso.id}`)}}><BsArrow90DegLeft /></button>
+                    <div className="botao-entrar-curso">
+                        <button className="botao-entrar" onClick={() => { navigate(`/curso/${curso.id}`) }}><BsArrow90DegLeft /></button>
                     </div>
-                    <div className="titulo-curso">
-                         {curso.titulo}
+                    <div className="titulo-card">
+                        {curso.titulo}
                     </div>
+
                     <div>
                         <button className="botao-excluir"><BsTrash /></button>
                     </div>

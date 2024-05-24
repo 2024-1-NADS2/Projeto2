@@ -74,7 +74,7 @@ export default function PerfilOrg() {
                                     </div>
                                     <div className="info-perfil-org">
                                         <div className="perfil-dados">
-                                            <div>
+                                            <div className="name-organizacao">
                                                 {org.nome}
                                             </div>
                                             <div className="descricao-perfil-org">

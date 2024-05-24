@@ -5,6 +5,7 @@ import { AiFillCaretDown } from "react-icons/ai";
 import { Link, useNavigate } from 'react-router-dom';
 import { useSessionStorage } from '@uidotdev/usehooks';
 import { obterOrganizacao } from '../../services/organizacoes';
+import { IoMdExit } from "react-icons/io";
 
 
 export default function Cabecalho() {
@@ -44,7 +45,7 @@ export default function Cabecalho() {
         return (
             <div className="botoes-login">
                 {org.nome}
-                <button onClick={handleLogout}>SAIR</button>
+                <button className="botao-sair" onClick={handleLogout}><IoMdExit/></button>
             </div>
         )
     }
