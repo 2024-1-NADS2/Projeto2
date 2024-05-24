@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useState } from "react";
 import style from '../PerfilOrg/style.css';
 import Cabecalho from "../../components/Cabecalho/Cabecalho";
@@ -7,12 +7,21 @@ import Conteudo from "../../components/Conteudo/Conteudo";
 import Rodape from "../../components/Rodapé/Rodape";
 import { MdOutlineModeEdit } from "react-icons/md";
 import Modal from "../../components/Modal/Modal";
+import { BsTrash } from "react-icons/bs";
+import { useParams } from "react-router-dom";
+import { obterOrganizacao } from "../../services/organizacoes";
 
 
 
 export default function PerfilOrg() {
-
+    const { id } = useParams()
+    const [org, setOrg] = useState({})
     const [openModal, setOpenModal] = useState(false)
+
+    useEffect(() => {
+        console.log({id})
+        obterOrganizacao(id).then(setOrg);
+    }, [])
 
     return (
         <>
@@ -33,10 +42,10 @@ export default function PerfilOrg() {
                                     <div className="info-perfil-org">
                                         <div className="perfil-dados">
                                             <div>
-                                                Instituto Ebenezer
+                                                {org.nome}
                                             </div>
                                             <div className="descricao-perfil-org">
-                                                O Instituto Ebenézer é uma organização da sociedade civil, constituída em 2018, com o objetivo de promover a inclusão social e a defesa de direitos sociais de pessoas em situação de risco e vulnerabilidade social.
+                                                {org.descricao}
                                             </div>
                                         </div>
                                     </div>
@@ -75,35 +84,28 @@ export default function PerfilOrg() {
                                 </Modal>
                                 <div className="perfil-content">
                                     <div className="curso-pub">
-                                        <div>
-                                            ThumbNeil
-                                        </div>
-                                        <div className="Info-curso">
-                                            Fazendo uma aplicação do zero com React
-                                        </div>
-                                    </div>
-                                    <div className="curso-pub">
-                                        <div>
-                                            ThumbNeil
-                                        </div>
-                                        <div className="Info-curso">
-                                            Fazendo uma aplicação do zero com React
-                                        </div>
-                                    </div>
-                                    <div className="curso-pub">
-                                        <div>
-                                            ThumbNeil
-                                        </div>
-                                        <div className="Info-curso">
-                                            Fazendo uma aplicação do zero com React
-                                        </div>
-                                    </div>
-                                    <div className="curso-pub">
-                                        <div>
-                                            ThumbNeil
-                                        </div>
-                                        <div className="Info-curso">
-                                            Fazendo uma aplicação do zero com React
+                                        <div className="curso-content-card">
+                                            <div className="info-curso">
+                                                <div className="titulo-curso">
+                                                    Fazendo uma aplicação do zero com React
+                                                </div>
+                                                <div>
+                                                    <button className="botao-excluir"><BsTrash /></button>
+                                                </div>
+                                            </div>
+                                            <div className="sub-info-curso">
+                                                <div className="descricao-curso">
+                                                    descricao do curso
+
+                                                </div>
+                                                <div className="professor-curso">
+                                                    Professor
+                                                </div>
+                                                <div className="carga-curso">
+                                                    10 horas
+                                                </div>
+                                            </div>
+
                                         </div>
                                     </div>
                                 </div>

@@ -10,9 +10,9 @@ function AppRoutes(){
     return(
         <BrowserRouter>
             <Routes>
-                <Route path="/perfilorganizacoes" element={<PerfilOrg/>}></Route>
                 <Route path="/" element={<Home/>}></Route>
                 <Route path="/organizações" element={<Organizações/>}></Route>
+                <Route path="/perfilorganizacoes/:id" element={<PerfilOrg/>}></Route>
                 <Route path="/sobrenos" element={<Sobrenos/>}></Route>
                 <Route path="/login" element={<Login/>}></Route>
                 <Route path="/cadastro" element={<Cadastro/>}></Route>

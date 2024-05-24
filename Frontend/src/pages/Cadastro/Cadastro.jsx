@@ -1,13 +1,16 @@
 import React from "react";
 import style from './style.css';
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import { cadastrarOrganizacao } from "../../services/organizacoes";
 
 
 
 const Cadastro = () => {
+  const navigate = useNavigate()
+
   const [formData, setFormData] = useState({
-    username: '',
+    nome: '',
     email: '',
     cnpj: '',
     senha: '',
@@ -15,7 +18,7 @@ const Cadastro = () => {
   });
 
   const [errors, setErrors] = useState({
-    username: '',
+    nome: '',
     email: '',
     cnpj: '',
     senha: '',
@@ -31,28 +34,51 @@ const Cadastro = () => {
 
   const handleCadastro = (e) => {
     e.preventDefault();
-    checkInput('username');
-    checkInput('email');
-    checkInput('cnpj');
-    checkInput('senha');
-    checkInput('confirmacaoSenha');
+    const validations = [
+      checkInput('nome'),
+      checkInput('email'),
+      checkInput('cnpj'),
+      checkInput('senha'),
+      checkInput('confirmacaoSenha')
+    ]
     // Adicione outras validações aqui
+    if (validations.every(Boolean)) {
+      cadastrarOrganizacao(formData).then(success => {
+        if (success) {
+          navigate("/login")
+        }
+      })
+    }
   };
 
   const checkInput = (input) => {
     const value = formData[input];
+
+    if (input === 'confirmacaoSenha' && value && value != formData.senha) {
+      setErrors((prevErrors) => ({
+        ...prevErrors,
+        [input]: `A senha não é identica à confirmação`,
+      }));
+
+      return false;
+    }
 
     if (value === '') {
       setErrors((prevErrors) => ({
         ...prevErrors,
         [input]: `${input === 'confirmacaoSenha' ? 'Confirmação de Senha' : 'Campo'} Obrigatório`,
       }));
-    } else {
-      setErrors((prevErrors) => ({
-        ...prevErrors,
-        [input]: '',
-      }));
+
+      return false;
     }
+
+    setErrors((prevErrors) => ({
+      ...prevErrors,
+      [input]: '',
+    }));
+
+    return true
+
   };
 
   return (
@@ -62,16 +88,16 @@ const Cadastro = () => {
           <h2>Criar Conta</h2>
         </section>
         <form id="form" className="form-cadastro" onSubmit={handleCadastro}>
-          <div className={`form-content ${errors.username ? 'error' : ''}`}>
-            <label htmlFor="username">Nome da Organização</label>
+          <div className={`form-content ${errors.nome ? 'error' : ''}`}>
+            <label htmlFor="nome">Nome da Organização</label>
             <input
               type="text"
-              id="username"
+              id="nome"
               placeholder="Digite o nome do Usuario"
-              value={formData.username}
+              value={formData.nome}
               onChange={handleChange}
             />
-            <span className="error-message">{errors.username}</span>
+            <span className="error-message">{errors.nome}</span>
           </div>
 
           <div className={`form-content ${errors.email ? 'error' : ''}`}>
