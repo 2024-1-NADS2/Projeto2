@@ -16,7 +16,8 @@ function AppRoutes(){
                 <Route path="/sobrenos" element={<Sobrenos/>}></Route>
                 <Route path="/login" element={<Login/>}></Route>
                 <Route path="/cadastro" element={<Cadastro/>}></Route>
-                <Route path="/recuperarsenha" element={<Recuperarsenha/>}></Route>
+                <Route path="/recuperarsenha" element={<Recuperarsenha />}></Route>
+                <Route path="/curso/:id" element={<Recuperarsenha />}></Route>
             </Routes>
         </BrowserRouter>
    )

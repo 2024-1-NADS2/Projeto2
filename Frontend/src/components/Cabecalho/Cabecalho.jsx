@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import styles from './style.css';
 import Logo from "../img/logo.png"
 import { AiFillCaretDown } from "react-icons/ai";
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { useSessionStorage } from '@uidotdev/usehooks';
 import { obterOrganizacao } from '../../services/organizacoes';
 
@@ -10,6 +10,7 @@ import { obterOrganizacao } from '../../services/organizacoes';
 export default function Cabecalho() {
     const [jwtToken, setJwtToken] = useSessionStorage("JwtToken");
     const [userInfo, setUserInfo] = useSessionStorage("UserInfo");
+    const navigate = useNavigate();
 
     const [org, setOrg] = useState()
 
@@ -23,6 +24,7 @@ export default function Cabecalho() {
         setJwtToken("")
         setUserInfo("")
         setOrg()
+        navigate(0)
     }
 
     const renderLoginButtons = () => {
