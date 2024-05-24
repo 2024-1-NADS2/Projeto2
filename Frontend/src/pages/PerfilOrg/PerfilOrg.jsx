@@ -7,9 +7,9 @@ import Conteudo from "../../components/Conteudo/Conteudo";
 import Rodape from "../../components/Rodapé/Rodape";
 import { MdOutlineModeEdit } from "react-icons/md";
 import Modal from "../../components/Modal/Modal";
-import { BsTrash } from "react-icons/bs";
 import { useParams } from "react-router-dom";
 import { obterOrganizacao } from "../../services/organizacoes";
+import CardCurso from "../../components/CardCurso/CardCurso";
 
 
 
@@ -83,31 +83,11 @@ export default function PerfilOrg() {
                                     </div>
                                 </Modal>
                                 <div className="perfil-content">
-                                    <div className="curso-pub">
-                                        <div className="curso-content-card">
-                                            <div className="info-curso">
-                                                <div className="titulo-curso">
-                                                    Fazendo uma aplicação do zero com React
-                                                </div>
-                                                <div>
-                                                    <button className="botao-excluir"><BsTrash /></button>
-                                                </div>
-                                            </div>
-                                            <div className="sub-info-curso">
-                                                <div className="descricao-curso">
-                                                    descricao do curso
-
-                                                </div>
-                                                <div className="professor-curso">
-                                                    Professor
-                                                </div>
-                                                <div className="carga-curso">
-                                                    10 horas
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </div>
+                                    {org.cursos?.map((curso) => {
+                            return (
+                                <CardCurso curso={curso} />
+                            )
+                        })}
                                 </div>
                             </section>
                         </div>
