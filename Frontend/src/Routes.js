@@ -1,7 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home/Home";
 import Sobrenos from "./pages/SobreNos/Sobrenos";
-import Curso from "./pages/Curso/Curso"
 import Login from "./pages/Login/Login";
 import Cadastro from "./pages/Cadastro/Cadastro";
 import Organizações from "./pages/Organizaçoes/Organizações";
@@ -15,7 +14,6 @@ function AppRoutes(){
                 <Route path="/" element={<Home/>}></Route>
                 <Route path="/organizações" element={<Organizações/>}></Route>
                 <Route path="/sobrenos" element={<Sobrenos/>}></Route>
-                <Route path="/cursos" element={<Curso/>}></Route>
                 <Route path="/login" element={<Login/>}></Route>
                 <Route path="/cadastro" element={<Cadastro/>}></Route>
                 <Route path="/recuperarsenha" element={<Recuperarsenha/>}></Route>

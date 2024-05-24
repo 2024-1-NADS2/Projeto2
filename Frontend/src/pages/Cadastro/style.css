@@ -1,136 +1,81 @@
-body {
-    margin: 0;
-}
-
-body * {
-    box-sizing: border-box;
-}
-
-.container-register {
-    width: 100vw;
-    height: 100vh;
+.content-cadastro{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    min-height: 100vh;
+    width: 100%;
+    background-color: #a8a5a5;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(255, 255, 255, 0.541);
 }
 
-.container-register-form {
+.container-cadastro{
+    background-color: #fafafa;
+    border-radius: 14px;
+    margin: 14px;
+    max-width: 600px;
     width: 100%;
-    max-width: 400px; 
-    padding: 30px 20px; 
-    background-color: rgb(18, 18, 54);
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column; 
-    align-items: center; 
+    box-sizing: 0px 3px 5px rgba(0,0,0,0.5);
+    overflow: hidden;
 }
 
-.container-title-form-register {
-    color: white;
-    margin-bottom: 20px; 
-    font-weight: 500;
-    text-transform: uppercase;
+.header-cadastro{
+    background: linear-gradient(120deg, #6a51b1 0%, rgb(18, 18, 54) 100% );
+    padding: 10px;
     text-align: center;
-}
-
-select {
-    width: 100%; 
-    padding: 10px; 
-    border: none;
-    border-radius: 10px;
-    outline: none;
-    text-transform: uppercase;
-    font-weight: 800;
-    letter-spacing: 2px;
-    color: rgb(18, 18, 54);
-    background-color: white;
-    cursor: pointer;
-    text-align: center;
-}
-
-.container-select-register{
-    color: white;
-    text-align: center;
-}
-
-.container-inputs-form-register {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    justify-content: center;
-    width: 100%;
-    margin-bottom: 15px; 
-}
-.container-inputs-form-register > label{
     color: white;
 }
 
-.container-inputs-form-register > input {
-    width: 100%;
-    border-radius: 5px;
-    border: none;
-    padding: 16px;
-    background-color: white;
-    font-size: 11pt;
-    outline: none;
-    box-sizing: border-box;
-    margin-bottom: 0px;
+.form-cadastro{
+    padding: 18px;
 }
-.container-inputs-form-register{
-    color: white;
-    font-size: 1.4rem;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+.form-content{
+    margin-bottom: 8px;
+    padding-bottom: 15px;
+    position: relative;
 }
-.container-handleNext-register {
-    width: 100%; 
-    padding: 15px 0px;
-    border: none;
-    border-radius: 10px;
-    outline: none;
-    text-transform: uppercase;
-    font-weight: 800;
-    letter-spacing: 2px;
-    color: rgb(18, 18, 54);
-    background-color: white;
-    cursor: pointer;
-    text-align: center;
-}
-.container-handleBack-register{
-    width: 100%; 
-    padding: 5px 0px;
-    border: none;
-    border-radius: 10px;
-    outline: none;
-    text-transform: uppercase;
-    font-weight: 800;
-    letter-spacing: 2px;
-    color: rgb(18, 18, 54);
-    background-color: white;
-    cursor: pointer;
-    text-align: center;
+
+.form-content label{
+    display: inline-block;
     margin-bottom: 10px;
 }
 
-.container-Ihaveanaccount-form {
-    text-transform: uppercase;
-    margin: 10px 0px;
-    text-decoration: none;
-    color: rgb(255, 238, 1); 
-    text-align: center;
+.form-content input{
+    display: block;
+    width: 100%;
+    border-radius: 8px;
+    padding: 15px;
+    border: 2px solid #dfdfdf;
 }
 
-.container-button-form-register {
-    width: 100%; 
-    padding: 15px 0px;
+.form-content span{
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    visibility: visible;
+}
+
+.form-cadastro button{
+    background-color: rgba(18, 18, 54, 0.933);
+    color: white;
+    width: 100%;
+    border-radius: 14px;
+    padding: 10px;
     border: none;
-    border-radius: 10px;
-    outline: none;
-    text-transform: uppercase;
-    font-weight: 800;
-    letter-spacing: 2px;
-    color: rgb(18, 18, 54);
-    background-color: white;
+    font-size: 16px;
     cursor: pointer;
-    text-align: center; 
+    margin-top: 14px;
+}
+
+.form-content.error input{
+    border-color: #ff3b25;
+}
+
+.form-content.error span{
+    color: #ff3b25;
+}
+
+.error-message{
+    color: red;
+    font-size: 12px;
 }
