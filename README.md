@@ -39,9 +39,18 @@ O EducaFácil é uma plataforma educacional online desenvolvida para facilitar o
 
 |readme.md<br>
 
-## 💻 Configuração para Desenvolvimento:
+## 💻 Configuração para Desenvolvimento
 
 Para abrir este projeto você necessita das seguintes ferramentas:
 
-* <a href="https://code.visualstudio.com/"> Visual Studio Code
-* <a href="https://www.mysql.com/"> MySQL
+<p>-<a href="https://nodejs.org/en">Node.js</a></p>
+<p>-<a href="https://www.mysql.com/">MySQL Workbench</a></p>
+<p>-<a href="https://code.visualstudio.com/">Visual Studio Code</a></p>
+<p>-<a href="https://visualstudio.microsoft.com/pt-br/vs/">Visual Studio 2022</a></p>
+
+<P>Para executar o projeto abra o local Documentos\GitHub\Projeto2\Frontend\src no Visual Studio Code e execute o comando abaixo no terminal:</P>
+
+```sh
+npm start
+```
+<P>Em caso de erro verifique se o Node.js encontra-se instalado corretamente em sua máquina.</P>
