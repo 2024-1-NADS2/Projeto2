@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("educafacilapi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+35309bc26b18cc51ca163b6015c173a769d584bc")]
 [assembly: System.Reflection.AssemblyProductAttribute("educafacilapi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("educafacilapi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
