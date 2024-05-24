@@ -5,7 +5,7 @@
 </p>
 
 
-# Projeto EducaFácil
+# 💻 Projeto EducaFácil
 <p align="center">
 <a href= ""><img src="https://img.freepik.com/psd-gratuitas/ilustracao-3d-para-leitura-com-livros-essenciais_23-2151295076.jpg" alt="" border="0"></a>
 </p>
@@ -26,10 +26,10 @@ O EducaFácil é uma plataforma educacional online desenvolvida para facilitar o
 -Raiz<br>
 |<br>
 |-->documentos<br>
- &emsp;|PI_Modelagem de Software.pdf<br>
- &emsp;|PI_Modelagem de Software.docx<br>
  &emsp;|Projeto_de_Extensão_EducaFacil.pdf<br>
  &emsp;|Projeto_de_Extensão_EducaFacil.docx<br>
+ &emsp;|Requisitos_Modelagem de Software e Arquitetura de Sistemas.pdf<br>
+ &emsp;|Requisitos_Modelagem de Software e Arquitetura de Sistemas.docx<br>
 |-->Backend<br>
  &emsp;|-->.vs<br>
  &emsp;|-->educafacilapi<br>
