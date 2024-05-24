@@ -1,12 +1,51 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import styles from './style.css';
 import Logo from "../img/logo.png"
 import { AiFillCaretDown } from "react-icons/ai";
 import { Link } from 'react-router-dom';
+import { useSessionStorage } from '@uidotdev/usehooks';
+import { obterOrganizacao } from '../../services/organizacoes';
 
 
 export default function Cabecalho() {
+    const [jwtToken, setJwtToken] = useSessionStorage("JwtToken");
+    const [userInfo, setUserInfo] = useSessionStorage("UserInfo");
 
+    const [org, setOrg] = useState()
+
+    useEffect(() => {
+        if (jwtToken) {
+            obterOrganizacao(userInfo.sub).then(setOrg)
+        }
+    }, [jwtToken])
+
+    const handleLogout = () => {
+        setJwtToken("")
+        setUserInfo("")
+        setOrg()
+    }
+
+    const renderLoginButtons = () => {
+        return (
+            <div className="botoes-login">
+                <Link to="/login" className='linksemsublinhado'>
+                    <button className="btn">Fazer login</button>
+                </Link>
+                <Link to="/cadastro" className='linksemsublinhado'>
+                    <button className="btn">Cadastre-se</button>
+                </Link>
+            </div>
+        )
+    }
+
+    const renderProfile = () => {
+        return (
+            <div className="botoes-login">
+                {org.nome}
+                <button onClick={handleLogout}>SAIR</button>
+            </div>
+        )
+    }
 
     return (
         <header>
@@ -25,15 +64,9 @@ export default function Cabecalho() {
                     <a href="#">ORIENTAÇÂO A OBJETO</a>
                 </div>
             </nav>
-            <div className="botoes-login">
-                <Link to="/login" className='linksemsublinhado'>
-                    <button className="btn">Fazer login</button>
-                </Link>
-                <Link to="/cadastro" className='linksemsublinhado'>
-                    <button className="btn">Cadastre-se</button>
-                </Link>
 
-            </div>
+            {org ? renderProfile() : renderLoginButtons()}
+
         </header>
     )
 }
