@@ -31,7 +31,6 @@ O EducaFácil é uma plataforma educacional online desenvolvida para facilitar o
  &emsp;|Requisitos_Modelagem de Software e Arquitetura de Sistemas.pdf<br>
  &emsp;|Requisitos_Modelagem de Software e Arquitetura de Sistemas.docx<br>
 |-->Backend<br>
- &emsp;|-->.vs<br>
  &emsp;|-->educafacilapi<br>
 |-->Frontend<br>
  &emsp;|-->src<br>
@@ -46,7 +45,6 @@ Para abrir este projeto você necessita das seguintes ferramentas:
 <p>-<a href="https://nodejs.org/en">Node.js</a></p>
 <p>-<a href="https://www.mysql.com/">MySQL Workbench</a></p>
 <p>-<a href="https://code.visualstudio.com/">Visual Studio Code</a></p>
-<p>-<a href="https://visualstudio.microsoft.com/pt-br/vs/">Visual Studio 2022</a></p>
 
 <P>Para executar o projeto abra o local Documentos\GitHub\Projeto2\Frontend\src no Visual Studio Code e execute o comando abaixo no terminal:</P>
 
