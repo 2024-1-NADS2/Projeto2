@@ -7,18 +7,18 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using educafacilapi.Data;
 using educafacilapi.Models;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.IdentityModel.JsonWebTokens;
+using System.Security.Claims;
 
 namespace educafacilapi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class CursosController : ControllerBase
+    public class CursosController : BaseController
     {
-        private readonly EducaFacilDbContext _context;
-
-        public CursosController(EducaFacilDbContext context)
+        public CursosController(EducaFacilDbContext context) : base(context)
         {
-            _context = context;
         }
 
         // GET: api/Cursos
@@ -39,18 +39,26 @@ namespace educafacilapi.Controllers
                 return NotFound();
             }
 
+            await _context.Entry(cursos).Collection(c => c.Videos).LoadAsync();
+
             return cursos;
         }
 
         // PUT: api/Cursos/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+        [Authorize]
         [HttpPut("{id}")]
         public async Task<IActionResult> PutCursos(int id, Cursos cursos)
         {
+            if(UserId == 0) return Forbid();
+
             if (id != cursos.Id)
             {
                 return BadRequest();
             }
+            var curso = await _context.Cursos.FindAsync(id);
+
+            if (curso?.OrganizacaoId != UserId) return Forbid();
 
             _context.Entry(cursos).State = EntityState.Modified;
 
@@ -75,9 +83,14 @@ namespace educafacilapi.Controllers
 
         // POST: api/Cursos
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+        [Authorize]
         [HttpPost]
         public async Task<ActionResult<Cursos>> PostCursos(Cursos cursos)
         {
+            if (UserId == 0) { return Forbid(); }
+
+            cursos.OrganizacaoId = UserId;
+
             _context.Cursos.Add(cursos);
             await _context.SaveChangesAsync();
 
@@ -85,10 +98,16 @@ namespace educafacilapi.Controllers
         }
 
         // DELETE: api/Cursos/5
+        [Authorize]
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteCursos(int id)
         {
+            if (UserId == 0) { return Forbid(); }
+
             var cursos = await _context.Cursos.FindAsync(id);
+
+            if(cursos?.OrganizacaoId != UserId) { return Forbid(); }
+
             if (cursos == null)
             {
                 return NotFound();

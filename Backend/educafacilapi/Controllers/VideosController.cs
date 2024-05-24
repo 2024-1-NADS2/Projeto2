@@ -7,18 +7,17 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using educafacilapi.Data;
 using educafacilapi.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace educafacilapi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class VideosController : ControllerBase
+    public class VideosController : BaseController
     {
-        private readonly EducaFacilDbContext _context;
 
-        public VideosController(EducaFacilDbContext context)
+        public VideosController(EducaFacilDbContext context) : base(context)
         {
-            _context = context;
         }
 
         // GET: api/Videos
@@ -44,6 +43,7 @@ namespace educafacilapi.Controllers
 
         // PUT: api/Videos/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+        [Authorize]
         [HttpPut("{id}")]
         public async Task<IActionResult> PutVideos(int id, Videos videos)
         {
@@ -75,9 +75,14 @@ namespace educafacilapi.Controllers
 
         // POST: api/Videos
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+        [Authorize]
         [HttpPost]
         public async Task<ActionResult<Videos>> PostVideos(Videos videos)
         {
+            var curso = await _context.Cursos.FindAsync(videos.CursoId);
+
+            if(curso?.OrganizacaoId != UserId) return BadRequest();
+
             _context.Videos.Add(videos);
             await _context.SaveChangesAsync();
 
@@ -85,6 +90,7 @@ namespace educafacilapi.Controllers
         }
 
         // DELETE: api/Videos/5
+        [Authorize]
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteVideos(int id)
         {
@@ -93,6 +99,10 @@ namespace educafacilapi.Controllers
             {
                 return NotFound();
             }
+
+            var curso = await _context.Cursos.FindAsync(videos.CursoId);
+
+            if (curso?.OrganizacaoId != UserId) return Forbid();
 
             _context.Videos.Remove(videos);
             await _context.SaveChangesAsync();

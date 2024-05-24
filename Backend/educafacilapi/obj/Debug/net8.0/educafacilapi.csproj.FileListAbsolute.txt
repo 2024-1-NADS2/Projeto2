@@ -461,3 +461,11 @@ C:\Users\renan\Documents\dev\Projeto2\Backend\educafacilapi\obj\Debug\net8.0\ref
 C:\Users\renan\Documents\dev\Projeto2\Backend\educafacilapi\obj\Debug\net8.0\educafacilapi.pdb
 C:\Users\renan\Documents\dev\Projeto2\Backend\educafacilapi\obj\Debug\net8.0\educafacilapi.genruntimeconfig.cache
 C:\Users\renan\Documents\dev\Projeto2\Backend\educafacilapi\obj\Debug\net8.0\ref\educafacilapi.dll
+C:\Users\renan\Documents\dev\Projeto2\Backend\educafacilapi\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\renan\Documents\dev\Projeto2\Backend\educafacilapi\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\renan\Documents\dev\Projeto2\Backend\educafacilapi\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\renan\Documents\dev\Projeto2\Backend\educafacilapi\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\renan\Documents\dev\Projeto2\Backend\educafacilapi\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\renan\Documents\dev\Projeto2\Backend\educafacilapi\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\renan\Documents\dev\Projeto2\Backend\educafacilapi\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\renan\Documents\dev\Projeto2\Backend\educafacilapi\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
