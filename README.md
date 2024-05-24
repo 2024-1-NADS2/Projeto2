@@ -52,3 +52,12 @@ Para abrir este projeto você necessita das seguintes ferramentas:
 npm start
 ```
 <P>Em caso de erro verifique se o Node.js encontra-se instalado corretamente em sua máquina.</P>
+
+## 🎓 Referências
+
+Aqui estão as referências usadas no projeto.
+
+1. <https://github.com/iuricode/readme-template>
+2. <https://github.com/gabrieldejesus/readme-model>
+3. <https://creativecommons.org/share-your-work/>
+4. <https://www.youtube.com/@yggbrasiledu>
