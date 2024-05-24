@@ -40,7 +40,8 @@
     text-align:justify;
     width: 100%;
     padding: 5px;
-    border: 2px solid rgb(129, 126, 126);
+    border: 3px solid rgb(241, 239, 239);
+    background-color: rgb(157, 159, 161);
     border-radius: 10px;
 }
 
@@ -68,17 +69,16 @@
 }
 
 .pencil-edit{
-    background: none;
-    font-size: 1rem;
-    border: 2px solid rgb(129, 126, 126);
-    color: rgb(0, 0, 0);
-    border-radius: 10%;
-    padding: 5px;
-    gap: 2px;
-    cursor: pointer;
+    background: linear-gradient(120deg, #6a51b1 0%, rgb(18, 18, 54) 100% ) ;
+    padding: 15px;
+    color: white;
+    border-radius: 14px;
+    border: 3px solid rgb(241, 239, 239);
+    font-size: 16px;
     display: flex;
-    align-items: center;
     justify-content: center;
+    gap: 6px;
+    cursor: pointer;
 }
 
 .perfil-content{
@@ -92,8 +92,61 @@
     display: flex;
     gap: 50px;
     height: 90px;
-    border: 2px solid rgb(71, 71, 80);
+    border: 3px solid rgb(241, 239, 239);
     width: 100%;
     border-radius: 10px;
-    background-color: white;
+    background-color: rgb(157, 159, 161);
+}
+
+.add-curso{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.button-add-curso{
+    background: linear-gradient(120deg, #6a51b1 0%, rgb(18, 18, 54) 100% ) ;
+    padding: 15px;
+    color: white;
+    border-radius: 14px;
+    border: 3px solid rgb(241, 239, 239);
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.inputs-postar-curso{
+    display: flex;
+    gap: 20px;
+    padding-left: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputs-info{
+    display: flex;
+    width: 100%;
+    font-size: 1.2rem;
+    gap: 10px;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.inputs-info input{
+    width: calc(100% - 20px);
+    border-radius: 10px;;
+}
+
+.salvar-curso button{
+    background: linear-gradient(120deg, #6a51b1 0%, rgb(18, 18, 54) 100% ) ;
+    padding: 15px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    border-radius: 14px;
+    border: 3px solid rgb(241, 239, 239);
+    font-size: 16px;
+    cursor: pointer;
 }
