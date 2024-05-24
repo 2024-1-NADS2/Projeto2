@@ -13,54 +13,36 @@ export default function Login() {
     const [password, setPassword] = useState("");
 
     return (
-
-        <body>
+        <section className="content-cadastro">
             <div className="container-login">
-                <form className="container-login-form">
-                    <div className="container-campo-form">
-                        <div className="container-title-form">
-                            <h1>Login</h1>
-                        </div>
-                        <div className="container-inputs-form">
-                            <label >Email: </label>
-                            <input
-                                type="email"
-                                placeholder="Email"
-                                value={email}
-                                onChange={e => setEmail(e.target.value)}
-                                required />
-                        </div>
-                        <div className="container-inputs-form">
-                            <label >Senha: </label>
-                            <input
-                                type="Password"
-                                placeholder="Senha"
-                                value={password}
-                                onChange={e => setPassword(e.target.value)}
-                                required />
-                        </div>
-                        <Link to="/recuperarsenha">
-                            <div className="container-alt-form">
-                                <a >Esqueci minha senha</a>
-                            </div>
-                        </Link>
-                        <Link to="/cadastro">
-                            <div className="container-criar-form">
-                                <a >Criar Conta</a>
-                            </div>
-                        </Link>
+                <section className="header-login">
+                    <h2>Login</h2>
+                </section>
+                <form id="form" className="form-login">
 
-                        <div className="container-login-teste">
-                            <Link to="/">
-                                <button type="submit" className="container-button-form" >Login</button>
-                            </Link>
-                        </div>
+                    <div className="input-email-login">
+                        <label htmlFor="email">Email:</label>
+                        <input
+                            type="text"
+                            id="email"
+                            placeholder="Digite o Email da Organização"
+
+                        />
                     </div>
 
+                    <div className="input-senha-login">
+                        <label htmlFor="senha">Senha:</label>
+                        <input
+                            type="text"
+                            id="senha"
+                            placeholder="Digite a sua senha"
+
+                        />
+
+                    </div>
+                    <button type="submit">Entrar</button>
                 </form>
             </div>
-            <script src="script.jsx"></script>
-
-        </body>
+        </section>
     )
 }
