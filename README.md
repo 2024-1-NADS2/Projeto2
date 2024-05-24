@@ -51,6 +51,7 @@ Para abrir este projeto você necessita das seguintes ferramentas:
 <P>Para executar o projeto abra o local Documentos\GitHub\Projeto2\Frontend\src no Visual Studio Code e execute o comando abaixo no terminal:</P>
 
 ```sh
+npm install react-dom
 npm start
 ```
 <P>Em caso de erro verifique se o Node.js encontra-se instalado corretamente em sua máquina.</P>
