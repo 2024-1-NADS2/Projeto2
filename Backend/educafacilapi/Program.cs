@@ -6,6 +6,15 @@ using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy(name: "AllowAll",
+                      builder =>
+                      {
+                          builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader();
+                      });
+});
+
 // Add services to the container.
 var mysqlConnection = builder.Configuration.GetConnectionString("ConnectionMysql");
 builder.Services.AddDbContext<EducaFacilDbContext>(options => options.UseMySql(mysqlConnection, ServerVersion.AutoDetect(mysqlConnection), options => options.EnableRetryOnFailure(maxRetryCount: 5,
@@ -72,6 +81,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+app.UseCors("AllowAll");
 
 app.UseAuthentication();
 app.UseAuthorization();
