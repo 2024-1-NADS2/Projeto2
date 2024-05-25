@@ -20,7 +20,7 @@ function AppRoutes(){
                 <Route path="/cadastro" element={<Cadastro/>}></Route>
                 <Route path="/recuperarsenha" element={<Recuperarsenha />}></Route>
                 <Route path="/curso/:id" element={<CursoPage />}></Route>
-                <Route path="/videopage" element={<VideoPage />}></Route>
+                <Route path="/videopage/:id" element={<VideoPage />}></Route>
             </Routes>
         </BrowserRouter>
    )

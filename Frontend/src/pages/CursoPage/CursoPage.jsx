@@ -10,6 +10,7 @@ import { cadastrarVideo } from "../../services/videos";
 import { useSessionStorage } from "@uidotdev/usehooks";
 
 
+import { BsCaretRightSquare } from "react-icons/bs";
 
 
 export default function CursoPage() {
@@ -43,8 +44,18 @@ export default function CursoPage() {
         // setErrors({ ...errors, [id]: '' });
     };
 
+    const getThumbnailUrl = (url) => {
+        try {
+            const [, youtubeId] = url.match(/\?v=([^&]+)/);
+            return `https://img.youtube.com/vi/${youtubeId}/0.jpg`
+        }
+        catch (error) { 
+            return 'https://pdtxar.com/wp-content/uploads/2019/11/video-placeholder-1280x720-40-768x433.jpg'
+        }    
+    }
+
     useEffect(() => {
-        obterCurso(id).then(c => console.log(c) || c).then(setCurso)
+        obterCurso(id).then(setCurso)
     }, [])
 
     return (
@@ -61,9 +72,10 @@ export default function CursoPage() {
 
                             return (
 
-                                <div className="card-aula">
+                                <div className="card-aula" onClick={() => navigate(`/videopage/${video.id}`)}>
+                                    <div><BsCaretRightSquare onClick={() => navigate(`/videopage/${video.id}`)} /> </div>
                                     <div className="video-aula">
-                                        <iframe width="300" height="175" src={video.url} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+                                        <img width="300" height="175" src={getThumbnailUrl(video.url)} />
                                     </div>
                                     <div className="info-aula">
                                         <div className="titulo-aula">

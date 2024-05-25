@@ -50,7 +50,6 @@ export default function PerfilOrg() {
     }
 
     useEffect(() => {
-        console.log({ id })
         obterOrganizacao(id).then(setOrg);
     }, [])
 
