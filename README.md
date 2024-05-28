@@ -21,6 +21,11 @@
 O EducaFácil é uma plataforma educacional online desenvolvida para facilitar o acesso de alunos a materiais escolares e videoaulas. O sistema permite que ONGs façam upload de conteúdos educativos, categorizados por tema e nível de ensino. A arquitetura é composta por uma camada de apresentação (frontend) em React, uma camada de aplicação (backend) com C# e Entity, e um banco de dados SQL. Focado em segurança, desempenho, escalabilidade e usabilidade, o EducaFácil visa proporcionar educação de qualidade e apoiar a missão educativa das ONGs.
 <br><br>
 
+## 🌐 Links:
+
+<p>-<a href="https://educafacil.netlify.app">EducaFácil</a></p>
+<p>-<a href="https://www.figma.com/design/isxIFqF9DUj6ln5EzYv3Ab/Site_PI?node-id=0-1&t=misdRTJAiUWgafaZ-1">Figma</a></p>
+
 ## 🛠 Estrutura de pastas
 
 -Raiz<br>
