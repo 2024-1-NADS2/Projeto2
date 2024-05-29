@@ -35,11 +35,14 @@ O EducaFácil é uma plataforma educacional online desenvolvida para facilitar o
  &emsp;|Projeto_de_Extensão_EducaFacil.docx<br>
  &emsp;|Requisitos_Modelagem de Software e Arquitetura de Sistemas.pdf<br>
  &emsp;|Requisitos_Modelagem de Software e Arquitetura de Sistemas.docx<br>
-|-->Backend<br>
- &emsp;|-->educafacilapi<br>
-|-->Frontend<br>
- &emsp;|-->src<br>
- &emsp;|-->public<br>
+ 
+|-->src<br>
+ &emsp;|-->Frontend<br>
+ &emsp;&emsp;|-->EducaFácil<br>
+ &emsp;&emsp;&emsp;|-->src<br>
+ &emsp;&emsp;&emsp;|-->public<br>
+ &emsp;|-->Backend<br>
+ &emsp;&emsp;|-->educafacilapi<br>
 
 |readme.md<br>
 
